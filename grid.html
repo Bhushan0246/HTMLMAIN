@@ -1,0 +1,124 @@
+<doctype html>
+	<html>
+	<head><title>grid</title>
+	</head>
+	<style>
+		.main{
+			background-image:repeating-radial-gradient(yellow,powderblue,lightpink);
+			background-attachment:fixed;
+			background-repeat:no-repeat;
+		}
+  .d1{background:LightSkyBlue;}
+  .d2{background:LightSalmon;}
+  .d3{
+  	background:paleturquoise;
+  	justify-self:start;
+  	/*You can align the content's position within its cell horizontally using the justify-self property on a grid item. By default, this property has a value of stretch, which will make the content fill the whole width of the cell.start: aligns the content at the left of the cell,
+center: aligns the content in the center of the cell,end: aligns the content at the right of the cell*/
+align-self:end;
+/*Just as you can align an item horizontally, there's a way to align an item vertically as well. To do this, you use the align-self property on an item. This property accepts all of the same values as justify-self*/
+  }
+  .d4{background:LightPink;}
+  .d5{
+  	background:PaleGreen;
+  	grid-column: 1 / 4;/*on left side start line no. and on the right side end line no. .This will make the item start at the first vertical line of the grid on the left and span to the 3rd line of the grid, consuming two columns. grid-rows:; can also be used.*/
+
+  }
+
+  .container {
+    font-size: 40px;
+    width: 100%;
+    background: LightGray;
+    display: grid;
+    grid-template-columns:90px 100px 110px;/*This will give your grid three columns that are 90px 100px and 110px wide. The number of parameters given to the grid-template-columns property indicates the number of columns in the grid.We can also use grid-template-rows in addition.values can be in px,em,%,auto,fr(fraction)*/
+    grid-column-gap:20px;/*To add a gap between the columns, use the grid-column or row-gap property.*/
+    grid-gap:10px 30px;/*grid-gap is a shorthand property for grid-row-gap and grid-column-gap. it will use the first one to set the gap between the rows and the second value for the columns.*/
+    justify-items:center;/* you can align all at once horizontally by using justify-items on your grid container.we can also use align-items:; prop*/
+    }
+    p {
+  display: none;
+  background-color: pink;
+  padding: 20px;
+}
+.p-dropdown:hover p {
+  display: block;
+}
+.button-dropdown{
+  display: block;
+}
+button{
+  padding: 9px;
+  background-color: yellow;
+  border-radius: 20px;
+  display: block;
+}
+.button-dropdown-content{
+  display: none;
+}
+a{
+  text-decoration: none;
+  display: block;
+}
+a:hover{
+	  text-decoration:2px underline red;
+	  background-color: orange;
+	  position: all;
+}
+.button-dropdown:hover .button-dropdown-content{
+  display:inline-block;
+  font-size: 18px;
+  margin: 0;
+}
+
+.dropdown-gif{
+	display: block;
+	background-color: antiquewhite;
+	background-attachment: fixed;
+	background-size: cover;
+	float: right;
+	position: absolute;
+	cursor: help;
+}
+img{
+	position: absolute;
+	display: block;
+	padding: 5px;
+	border:1px solid gray;
+}
+.gif{
+	display:none;
+	position: absolute; 
+}
+.dropdown-gif:hover .gif{
+	display: block;
+}
+.dropdown-gif:focus .gif{
+	display: block;
+}
+</style>
+<div class="container">
+  <div class="d1">11</div>
+  <div class="d2">22</div>
+  <div class="d3">33</div>
+  <div class="d4">44</div>
+  <div class="d5">55</div>
+</div>
+<body class="main">
+  <div class="p-dropdown"><br>Hover on me to show the hidden element content:
+  <p>Hey! I am here waiting for you.</p>
+</div>
+<div class="button-dropdown"><br>
+<button>Dropdown</button><br>
+<div class="button-dropdown-content">
+  <a href="#">link 1</a>
+  <a href="#">link 2</a>
+  <a href="#">link 3</a><br>
+</div>
+</div>
+<div class="dropdown-gif">hover over me to see a image.
+	<div class="gif"><br>
+  <img src="https://data.whicdn.com/images/328639805/original.gif" height="300px" width="270px" align="right"><br>
+</div>
+</div><br>
+  </body>
+</html>

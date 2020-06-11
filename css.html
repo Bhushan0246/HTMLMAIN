@@ -1,0 +1,51 @@
+<DOCTYPE html>
+<html>
+<head>
+	<title>CSS</title>
+	<style>
+		body {
+			background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTK-4o3-BCxg4jV4o-q5bShAzeMuRS4l8r1ylB10tmTfz68ahkx&usqp=CAU");
+			background-size:cover;
+			background-attachment:fixed;
+			opacity:1;
+			font-family:Courier;
+			font-size:19px; 
+		}
+		h1{
+			border:4px outset black;
+			background-color:lawngreen;
+			background-size:cover;
+		}
+		::selection{
+			color:black;
+		background-color:yellow; 
+		}
+	</style>
+</head>
+<body>
+<div>	<i>
+<h1 align="center"><br> Cascading Style Sheets(CSS)
+	<br><br></h1>
+</i>	
+<p class="b">CSS stands for Cascading Style Sheets. CSS describes how HTML elements are to be displayed on screen, paper, or in other media. CSS saves a lot of work. It can control the layout of multiple web pages all at once. External style sheets are stored in CSS files.CSS is just a makeup for Hypertext Mark-up Language (HTML) not a programming language or markup language. No, not in any sense of the term. CSS is a styling language, HTML is a document format. They're no more programming languages than a Word document is. </p>
+<p id="a"> CSS is the language for describing the presentation of Web pages, including colors, layout, and fonts. It
+background-size:cover; allows one to adapt the presentation to different types of devices, such as large screens, small screens, or printers. CSS is independent of HTML and can be used with any XML-based markup language.The latest version of HTML is HTML 5, which has changed the face of web page design. The latest version of CSS is CSS 3. Both of these versions work together to create interactive desktop applications that work on both a desktop browser and a mobile browser.<img src="https://img.devrant.com/devrant/rant/r_236669_egRwe.gif" align="right" height="147px" width="450px"></p>
+ <pre class="c">Difference Between the 3 Types of CSS Styles:				
+			Inline 
+			External 
+			Internal </pre>
+<p class="b">When a browser displays a document, it must combine the document's content with its style information. It processes the document in a number of stages, which we've listed below. Bear in mind that this is a very simplified version of what happens when a browser loads a webpage, and that different browsers will handle the process in different ways. But this is roughly what happens:
+<ol class="c">
+    <li>The browser loads the HTML (e.g. receives it from the network).</li>
+    <li>It converts the HTML into a DOM (Document Object Model). The DOM represents the document in the computer's memory. The DOM is explained in a bit more detail in the next section.</li>
+    <li>The browser then fetches most of the resources that are linked to by the HTML document, such as embedded images and videos ... and linked CSS! JavaScript is handled a bit later on in the process, and we won't talk about it here to keep things simpler.</li>
+    <li>The browser parses the fetched CSS, and sorts the different rules by their selector types into different "buckets", e.g. element, class, ID, and so on. Based on the selectors it finds, it works out which rules should be applied to which nodes in the DOM, and attaches style to them as required (this intermediate step is called a render tree).</li>
+    <li>The render tree is laid out in the structure it should appear in after the rules have been applied to it.</li>
+    <li>The visual display of the page is shown on the screen (this stage is called painting).</li></ol>
+</p>			
+<p id="a">The following diagram also offers a simple view of the process:<br>
+	<br>
+	<img src="https://media.prod.mdn.mozit.cloud/attachments/2015/10/14/11781/ab96f980498d7c46fe26f6df06b9acfc/rendering.svg" height="250px"><img src="https://media3.giphy.com/media/pNKcV5GPA0O1q/giphy.gif" align="right" height="370px" width="500px">
+</p>
+</div>
+</body>		
