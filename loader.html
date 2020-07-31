@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Loader animation</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width" initial-scale="1.0">
+<style type="text/css">
+	.circular	{
+		width: 130px;
+		height: 130px;
+		border-top:18px solid skyblue;
+		border-bottom:18px solid indianred;
+		border-left:18px solid forestgreen;
+		border-right:18px solid goldenrod;
+		border-radius: 50%;
+		animation-name: load;
+		animation-duration: 2.8s;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+		}
+		@keyframes load{
+			0%{
+				transform: rotate(0deg);
+			}
+			100%{
+				transform: rotate(360deg);
+			}
+		}
+		#straight{
+			width:450px;
+			height: 280px;
+			background-color: #262626;
+		}
+		.cir1, .cir2,.cir3, .cir4{
+			margin-top: 25%;
+			display: inline-block;
+			border-radius: 50%;
+			width: 33px;
+			height: 37px;
+			color:navy;
+			background-color: white;
+			animation-name: move;
+			animation-duration: 2.5s;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;
+		}
+		@keyframes move {
+			0%{ 
+				margin-left: 5%;
+				opacity: 1;
+			}
+			100%{
+				transform: rotate(360deg);
+				margin-left: 15%;
+				opacity: 0.4;
+			}
+		}
+		#wrap{text-align: center;
+			width: 350px;
+			height: 300px;
+			color:darkslateblue;
+			background-color: slateblue;
+		}
+		
+		.slide{
+			border-radius: 18px;
+			width: 10px;
+			height: 9px;
+			background-color: #99ccff;
+			animation-name: fill;
+			animation-iteration-count: infinite;
+			animation-timing-function: linear;
+			animation-duration: 4.2s;
+			animation-fill-mode: forwards;
+			animation-direction: alternate;
+			}
+		@keyframes fill{
+			0%{width: 10px;height: 10px;}
+			100%{width: 100px;height: 15px;}
+		}
+		#drible{
+			width: 550px;
+			height: 450px;
+			background-color: floralwhite;
+		}
+		.drible{
+			margin-left: 30%;
+			width: 252px;
+			height: 249px;
+			background-color: #fff7e6;
+			border-radius: 50%;
+			box-shadow: 3px 3px 10px #ffeecc, -3px -3px 10px #ffeecc;
+			animation-name: drible;
+			animation-duration: 4s;
+			animation-iteration-count: infinite;
+		}
+		@keyframes drible{
+			0%{transform: rotate(0deg);}
+			100%{transform: rotate(360deg);}
+		}
+		#cir3{
+			width: 550px;
+			height: 330px;
+			background-color: #1a1a1a;
+		}
+		.tri-circular	{
+		width: 190px;
+		height: 190px;
+		margin-left: 21%;
+		padding: 14px;
+		border-left:4px solid skyblue;
+		border-radius: 50%;
+		animation-name: triload;
+		animation-duration: 4.8s;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+		}
+		@keyframes triload{
+			0%{
+				transform: rotate(0deg);
+			}
+			100%{
+				transform: rotate(360deg);
+			}
+		}
+		.bi-circular	{
+		width: 173px;
+		height: 173px;
+		padding: 14px;
+		border-bottom:4px solid red;
+		border-radius: 50%;
+		animation-name: biload;
+		animation-duration: 3.7s;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+		}
+		@keyframes biload{
+			0%{
+				transform: rotate(0deg);
+			}
+			100%{
+				transform: rotate(360deg);
+			}
+		}
+		.mono-circular	{
+		width: 155px;
+		height: 155px;
+		padding: 14px;
+		border-top:4px solid forestgreen;
+		border-radius: 50%;
+		animation-name: monoload;
+		animation-duration: 2.9s;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+		}
+		@keyframes monoload{
+			0%{
+				transform: rotate(0deg);
+			}
+			100%{
+				transform: rotate(360deg);
+			}
+		}
+</style>
+</head>
+<body>
+	<h1>This is a circular loader animation.</h1>
+<div class="circular">
+</div>
+<br>
+
+<h1>This is a straight loader animation.</h1>
+<div id="straight">
+	<div class="cir1"></div>
+	<div class="cir2"></div>
+	<div class="cir3"></div>
+	<div class="cir4"></div>
+</div><br>
+
+<h1>This is a simple loading animation.</h1>
+<section id="wrap">loading ....
+<div class="slide">
+</div>
+</section>
+
+<h1>This is a Light loader animation.</h1>
+<section id="drible"><br><br><br>
+<div class="drible"></div>
+</section>
+
+<h1>This is another but different circular loader animation.</h1>
+<section id="cir3"><br><br>
+<div class="tri-circular">
+	<div class="bi-circular">
+		<div class="mono-circular"></div>
+	</div>
+</div>
+</section>
+<br>
+</body>
+</html>
