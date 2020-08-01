@@ -15,7 +15,7 @@
 		border-radius: 50%;
 		animation-name: load;
 		animation-duration: 2.8s;
-		animation-timing-function: linear;
+		animation-timing-function: ease-in-out;
 		animation-iteration-count: infinite;
 		}
 		@keyframes load{
@@ -31,7 +31,7 @@
 			height: 280px;
 			background-color: #262626;
 		}
-		.cir1, .cir2,.cir3, .cir4{
+		.cir11, .cir22,.cir33, .cir44{
 			margin-top: 25%;
 			display: inline-block;
 			border-radius: 50%;
@@ -58,7 +58,7 @@
 		}
 		#wrap{text-align: center;
 			width: 350px;
-			height: 300px;
+			height:100px;
 			color:darkslateblue;
 			background-color: slateblue;
 		}
@@ -96,73 +96,80 @@
 			animation-iteration-count: infinite;
 		}
 		@keyframes drible{
-			0%{transform: rotate(0deg);}
-			100%{transform: rotate(360deg);}
+			0%{transform: rotate(0deg);top:0;}
+			100%{transform: rotate(360deg);top:20px;}
 		}
-		#cir3{
+		#cir5{
 			width: 550px;
-			height: 330px;
+			height: 350px;
 			background-color: #1a1a1a;
 		}
-		.tri-circular	{
-		width: 190px;
-		height: 190px;
-		margin-left: 21%;
-		padding: 14px;
-		border-left:4px solid skyblue;
+		.cir1	{
+			display: inline-block;
+		width: 20px;
+		height: 20px;
+		margin-left: 30%;
+		margin-right: 5px;
+		background-color: darkgoldenrod;
 		border-radius: 50%;
-		animation-name: triload;
-		animation-duration: 4.8s;
+		border:3px solid #f1b10e;
+		animation-name: cirw;
+		animation-duration: 1.5s;
 		animation-timing-function: linear;
 		animation-iteration-count: infinite;
+		animation-delay: 0s;
+		animation-direction: alternate;
 		}
-		@keyframes triload{
-			0%{
-				transform: rotate(0deg);
-			}
-			100%{
-				transform: rotate(360deg);
-			}
+		@keyframes cirw{
+			0%{border:3px solid #f1b10e;opacity: 1;}
+			100%{border:13px solid #f1b10e;opacity: 0.2;}
 		}
-		.bi-circular	{
-		width: 173px;
-		height: 173px;
-		padding: 14px;
-		border-bottom:4px solid red;
-		border-radius: 50%;
-		animation-name: biload;
-		animation-duration: 3.7s;
-		animation-timing-function: linear;
-		animation-iteration-count: infinite;
+		.cir2{
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			margin-right: 5px;
+			background-color: green;
+			border:3px solid #00cc00;
+			border-radius: 50%;
+			animation: cirf 1.5s linear infinite alternate;
+			animation-delay: 0.3s;
 		}
-		@keyframes biload{
-			0%{
-				transform: rotate(0deg);
-			}
-			100%{
-				transform: rotate(360deg);
-			}
+		@keyframes cirf{
+			0%{border:3px solid #00cc00;opacity: 1;}
+			100%{border:13px solid #00cc00;opacity: 0.2;}
 		}
-		.mono-circular	{
-		width: 155px;
-		height: 155px;
-		padding: 14px;
-		border-top:4px solid forestgreen;
-		border-radius: 50%;
-		animation-name: monoload;
-		animation-duration: 2.9s;
-		animation-timing-function: linear;
-		animation-iteration-count: infinite;
+		.cir3{
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			margin-right: 5px;
+			background-color:crimson;
+			border:3px solid #ee4466;
+			border-radius: 50%;
+			animation: cira 1.5s linear infinite alternate;
+			animation-delay: 0.6s;
 		}
-		@keyframes monoload{
-			0%{
-				transform: rotate(0deg);
-			}
-			100%{
-				transform: rotate(360deg);
-			}
+		@keyframes cira{
+			0%{border:3px solid #ee4466;opacity: 1;}
+			100%{border:13px solid #ee4466;opacity: 0.2;}
 		}
-</style>
+		.cir4{
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			margin-right: 5px;
+			background-color:blue;
+			border-radius: 50%;
+			border:3px solid #4d4dff;
+			animation: cirs 1.5s linear infinite alternate;
+			animation-delay: 0.9s;
+		}
+		@keyframes cirs{
+			0%{border:3px solid #4d4dff;opacity: 1;}
+			100%{border:13px solid #4d4dff;opacity: 0.2;}
+		}
+		</style>
 </head>
 <body>
 	<h1>This is a circular loader animation.</h1>
@@ -172,10 +179,10 @@
 
 <h1>This is a straight loader animation.</h1>
 <div id="straight">
-	<div class="cir1"></div>
-	<div class="cir2"></div>
-	<div class="cir3"></div>
-	<div class="cir4"></div>
+	<div class="cir11"></div>
+	<div class="cir22"></div>
+	<div class="cir33"></div>
+	<div class="cir44"></div>
 </div><br>
 
 <h1>This is a simple loading animation.</h1>
@@ -190,12 +197,11 @@
 </section>
 
 <h1>This is another but different circular loader animation.</h1>
-<section id="cir3"><br><br>
-<div class="tri-circular">
-	<div class="bi-circular">
-		<div class="mono-circular"></div>
-	</div>
-</div>
+<section id="cir5"><br><br>
+<div class="cir1"></div>
+<div class="cir2"></div>
+<div class="cir3"></div>
+<div class="cir4"></div>
 </section>
 <br>
 </body>
