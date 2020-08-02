@@ -172,6 +172,68 @@
 			0%{border:3px solid #4d4dff;opacity: 1;}
 			100%{border:13px solid #4d4dff;opacity: 0.2;}
 		}
+		#loader{
+			background-color: #1a1a1a;
+		}
+		.loader {
+  animation:spin 1.5s infinite linear;
+  border:solid 2vmin transparent;
+  border-radius:60%;
+  border-right-color:skyblue;
+  border-top-color:skyblue;
+  height:20vmin;
+  position:relative;
+  top:30%;
+  left:10%;
+  width:20vmin;
+}
+   .loader:before {
+    animation:spin 2s infinite linear;
+    border:solid 2vmin transparent;
+    border-radius:50%;
+    border-right-color:palegreen;
+    border-top-color:palegreen;
+    box-sizing:border-box;
+    content:"";
+    height:16vmin;
+    left:0;
+    position:absolute;
+    top:0;
+    width:16vmin;
+  }
+  .loader:after {
+    animation:spin 3.5s infinite linear;
+    border:solid 2vmin transparent;
+    border-radius:50%;
+    border-right-color:indianred;
+    border-top-color:indianred;
+    box-sizing:border-box;
+    content:"";
+    height:12vmin;
+    left:2vmin;
+    position:absolute;
+    top:2vmin;
+    width:12vmin;
+  }
+
+@keyframes spin {
+  100% {
+    transform:rotate(360deg);
+  }
+}
+.single{
+	width: 25vmin;
+	height: 25vmin;
+	margin-left: 20%;
+	border:2em solid cyan;
+	border-top-color: dodgerblue;
+	border-radius: 50%;
+	animation: single 1.7s ease-out infinite; 
+}
+@keyframes single{
+	0%{transform: rotate(0deg);}
+	100%{transform: rotate(360deg);}
+}
 		</style>
 </head>
 <body>
@@ -207,5 +269,17 @@
 <div class="cir4"></div>
 </section>
 <br>
+
+<h1>This is a loader containing 3 rings. </h1>
+<div style="height: 250px;background-color: #1a1a1a;">
+<div class="loader">
+</div>
+</div>
+<br>
+<div style="height: 350px;">
+	<h1>This is a loader containing a single ring. </h1>
+	<br> <div class="single">		
+	</div>
+</div>
 </body>
 </html>
