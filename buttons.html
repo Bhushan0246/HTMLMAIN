@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Buttons</title>
+	<meta charset="utf-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style type="text/css">
+		button{
+			border-radius: 7px;
+			font-size: 16px;
+		}
+		.success{
+			margin-left: 8%;
+			padding: 18px;
+			border: 2px solid #4CAF50;
+			color: green;
+		}
+		.info{
+			margin-left: 8%;
+			padding: 18px 28px 18px 28px;
+			border: 2px solid #2196F3;
+			color: #2196F3;
+		}
+		.warn{
+			margin-left: 8%;
+			padding: 18px;
+			border: 2px solid goldenrod;
+			color: #ff9800;
+		}
+		.danger{
+			margin-left: 8%;
+			padding: 18px;
+			border: 2px solid red;
+			color: red;
+			cursor: not-allowed;
+		}
+		.default{
+			margin-left: 8%;
+			padding: 18px;
+			border: 2px solid gray;
+			color: gray;
+		}
+		.click{
+			padding: 15px 20px 15px 20px;
+			margin-left: 2%;
+			box-shadow: 3px 5px dimgray;
+			border:2px solid hotpink;
+			background-color: hotpink;
+			color: azure;
+		}
+		.click:active{
+			box-shadow:2px 3px dimgray;
+			transform: translateY(3px); 
+		}
+		.hover{
+			margin-left: 7%;
+			padding: 15px 20px 15px 20px;
+			box-shadow: 1px 2px dimgray;
+			border:2px solid dodgerblue;
+			background-color: dodgerblue;
+			color: azure;
+		}
+		.shover:after{
+			content: '\00bb';
+			font-size: 18px;
+			opacity: 0;
+			transition: 0.7s;
+		}
+		.hover:hover .shover:after{
+			opacity: 1;
+			padding-right: 23px;
+		}
+		.fadein{
+			margin-left: 7%;
+			padding: 15px 20px 15px 20px;
+			box-shadow: 1px 2px dimgray;
+			border:2px solid lightseagreen;
+			background-color: lightseagreen;
+			color: khaki;
+			opacity: 0.4;
+			transition: 1s;
+		}
+		.fadein:hover{opacity: 1;}
+		.load{
+			margin-left: 7%;
+			padding: 15px 18px 15px 18px;
+			background-color: lightyellow;
+			color: black;
+		}
+		.load:hover{animation: border 3s linear infinite alternate;}
+		@keyframes border{
+			0%{border: 3px solid gray;}
+			25%{border: 3px dotted grey;}
+			50%{border: 3px dashed gray;}
+			100%{border-style: dotted ridge dashed solid;}
+		}
+		.fa-cog{
+			animation: spin 2.3s linear infinite;
+			margin-right: 5px;
+		}
+		@keyframes spin{
+			0%{transform: rotate(0deg);}
+			100%{transform: rotate(360deg);}
+		}
+		.download{
+			margin-left: 7%;
+			padding: 15px 18px 15px 18px;
+			border: 2px solid palegreen;
+			background-color: palegreen;
+			color: black;
+		}
+		.download:hover{
+			animation: bg 5s linear infinite;
+			animation-direction: alternate;
+		}
+		@keyframes bg{
+			0%{background-color: palegreen;}
+			30%{background-color: orange;}
+			60%{background-color: goldenrod;}
+			90%{background-color: #ff3333;}
+			100%{background-color: darkseagreen;}
+		}
+		.notify{
+			border: none;
+			border-bottom: 4px solid indianred;
+			margin-left: 7%;
+			padding: 15px 15px 15px 15px;
+			background-color: lightsalmon;
+			color: black;
+		}
+		.nno{
+			width: 20px;
+			margin-top: -3%;
+			margin-left: 3.1%;
+			position: absolute;
+			border-radius: 50%;
+			background-color: limegreen;
+		}
+		.notify:active .nno{display: none;}
+	</style>
+</head>
+<body>
+<div>
+<h1>This are some alert buttons.</h1>
+<button class="success"> Success </button>
+<button class="info"> Info </button>
+<button class="warn"> Warning </button>
+<button class="danger"> Danger </button>
+<button class="default"> Default </button>
+</div>
+<div>
+	<h1>This are some buttons have effects.</h1>
+	<button class="click"> Click </button>
+	<button class="hover"><span class="shover">Hover </span></button>
+	<button class="fadein"> Fade in </button>
+	<button class="load"><b class="fa fa-cog"> </b> Loading
+ </button>
+ <button class="download"><i class="fa fa-arrow-circle-o-down"> </i>&nbsp; Download
+ </button>
+ <button class="notify"> Notification <span class="nno"> 2 </span></button>
+
+</div>
+</body>
+</html>
