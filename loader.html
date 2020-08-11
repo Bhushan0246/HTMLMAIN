@@ -9,21 +9,21 @@
 		width: 130px;
 		height: 130px;
 		border-top:18px solid skyblue;
-		border-bottom:18px solid indianred;
-		border-left:18px solid forestgreen;
-		border-right:18px solid goldenrod;
+		border-bottom:18px solid skyblue;
+		border-left:18px solid transparent;
+		border-right:18px solid transparent;
 		border-radius: 50%;
 		animation-name: load;
-		animation-duration: 2.8s;
-		animation-timing-function: ease-in-out;
+		animation-duration: 2.5s;
+		animation-timing-function: ease-out;
 		animation-iteration-count: infinite;
 		}
 		@keyframes load{
 			0%{
-				transform: rotate(0deg);
+				transform: rotate(360deg);
 			}
 			100%{
-				transform: rotate(360deg);
+				transform: rotate(0);
 			}
 		}
 		#straight{
