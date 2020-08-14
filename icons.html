@@ -13,20 +13,51 @@
 		.adjust{border: 2px solid black;border-right: 12px inset black;padding: 0 6px 0 6px;border-radius: 80%;}
 		.asterick{font-weight: bolder;font-size: 35px;}
 		.at{font-weight: bolder;font-size: 28px;}
-		.ban{font-weight: bold;border: 2px solid red;color: red;border-radius: 50%;}
-		.ban:after{content: '';}
+		.ban{font-weight: bold;border: 2px solid red;color: red;border-radius: 50%;padding: 0 4px;}
+		.ban:before{content: '/';font-size: 25px;}
+		.check{font-size: 25px;padding: 0 0 0 8px;}
+		.check-square{font-size: 25px;border: 2px solid #1a1a1a;padding: 0 0 0 8px;background-color: #404040;color: white;}
+		.check-circle{font-size: 25px;border: 2px solid #1a1a1a;border-radius: 50%;padding: 0 0 0 8px;background-color: #404040;color: white;}
+		.check-square-nonfilled{font-size: 25px;border: 2px solid #1a1a1a;padding: 0 0 0 8px;}
+		.check-circle-nonfilled{font-size: 25px;border: 2px solid #1a1a1a;border-radius: 50%;padding: 0 0 0 8px;}
+		.circle{border: 3px solid #262626;border-radius: 50%;padding: 0 11px;}
+		.circle-filled{border: 3px solid #262626;background-color: #404040;border-radius: 50%;padding: 0 11px;}
+		.close{font-size: 20px;font-weight: bolder;}
+		.code:after{content: '</>';font-size:20px;}
+		.copyright{border: 2px solid #262626;border-radius: 50%;padding: 0 4px 2px 6px;font-weight: bold;}
+		.creative-commons{border: 2px solid #262626;border-radius: 50%;padding: 0 0 2px 4px;font-weight: bold;}
+		.circle-dot{border: 8px solid #262626;border-radius: 50%;padding: 0 10px;}
+		.ellipsis{font-size: 30px;font-weight: bolder;}
+		.exclamation{font-size: 20px;}
+		.exclamation-circle{font-size: 20px;border: 1px solid #1a1a1a;border-radius: 50%;background-color: #404040;color: white;padding: 0 11px;}
 	</style>
 </head>
 <body>
-<span class="imdb">IMDb</span>-imdb
-<span class="quora">Q</span>-Quora
-<span class="win-close"> x </span>-windows close
-<span class="win-min"> - </span>-windows minimise
-<span class="win-max"> </span>-windows-maximise
-<span class="adjust"> </span>-Adjust
-<span class="asterick"> * </span>-Asterick
-<span class="at"> @ </span>-At
+<span class="imdb">IMDb</span> -imdb
+<span class="quora">Q</span> -Quora
+<span class="win-close"> x </span> -windows close
+<span class="win-min"> - </span> -windows minimise
+<span class="win-max"> </span> -windows-maximise
+<span class="adjust"> </span> -Adjust
+<span class="asterick"> * </span> -Asterick
+<span class="at"> @ </span> -At
 <br><br>
-<span class="ban"></span>-ban
+<span class="ban"></span> -ban
+<span class="check"> &#10003; </span> -check
+<span class="check-square"> &#10003; </span> -check
+<span class="check-circle"> &#10003; </span> -check
+<span class="check-square-nonfilled"> &#10003; </span> -check
+<span class="check-circle-nonfilled"> &#10003; </span> -check
+<span class="circle"> </span> -circle
+<span class="circle-filled"> </span> -circle
+<span class="close"> x </span> -close
+<span class="code"></span> -code
+<br><br>
+<span class="copyright"> c </span> -copyright
+<span class="creative-commons"> cc </span> -creative commons
+<span class="circle-dot"></span> -dot-circle
+<span class="ellipsis"> ... </span> -ellipsis
+<span class="exclamation"> ! </span>
+<span class="exclamation-circle"> ! </span>
 </body>
 </html>
