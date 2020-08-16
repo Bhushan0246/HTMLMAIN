@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Loader animation</title>
+	<title>Loader animation with custom scrollbar</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width" initial-scale="1.0">
 <style type="text/css">
+	html{scroll-behavior: smooth;}
+::-webkit-scrollbar{width: 1rem;background:linear-gradient(47deg,powderblue,indianred,palegreen);perspective: 100px;}
+::-webkit-scrollbar-thumb{background-color: firebrick;border-radius: 20px;border: 2px solid #262626;};0
+::-webkit-scrollbar-corner { background: rgba(0,0,0,0.5); }
 	.circular	{
 		width: 130px;
 		height: 130px;
@@ -236,23 +240,41 @@
 .ball-wrap{
 	width: 30%;
 	height: 20px;
+	background-color: orangered;
 }
 .ball-c{
 	background-color: #1a1a1a;
 	border-radius: 50%;
 	border:2px solid black;
-	width: 14px;
-	height: 14px;
+	width: 15px;
+	height: 15px;
 	animation: movball 0.5s ease-in-out infinite alternate;
 }
 @keyframes movball{
 	0%{margin-left: 5%;}
 	100%{margin-left:15%;}
 }
-	</style>
+.glowing-wrap{
+	width: 50%;
+	padding: 100px 0;
+	text-align: center;
+	background-color: #262626;
+}
+.glowing{
+	font-size: 100px;
+	font-family: cursive;
+	font-weight: bold;
+	color: white;
+	text-shadow: 5px 5px 4px hotpink, -5px -5px 4px pink, 6px 6px 5px hotpink;
+	animation: glow 1s linear infinite alternate;
+}
+@keyframes glow{
+	100%{text-shadow: 6px 6px 10px hotpink, -5px -5px 20px pink, 7px 7px 30px hotpink;color: #bfbfbf;}
+}
+		</style>
 </head>
 <body>
-<h1>This is a circular loader animation.</h1>
+	<h1>This is a circular loader animation.</h1>
 <div class="circular">
 </div>
 <br>
@@ -291,17 +313,22 @@
 </div>
 </div>
 <br>
-
 <div style="height: 350px;">
 	<h1>This is a loader containing a single ring. </h1>
 	<br> <div class="single">		
 	</div>
 </div>
 <br>
-
 <h1>This is a moving ball loader.</h1>
 <div class="ball-wrap">
 	<p class="ball-c"></p>
+</div>
+<br>
+<h1>This is a glowing loading text.</h1>
+<div class="glowing-wrap">
+<div class="glowing">
+	Loading...
+</div>
 </div>
 <br>
 </body>
