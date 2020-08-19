@@ -33,13 +33,45 @@
 		}
 		.oval{
 			width: 180px;
-			height: 0;
+			height: 140px;
 			text-align: center;
 			background-color: lightgreen;
 			border: 2px solid forestgreen;
 			border-radius: 50%;
 			position: absolute;
 			left: 38%;top: 3%;
+		}
+		.parallelogram{
+			width: 180px;
+			height: 100px;
+			text-align: center;
+			color: white;
+			transform: skew(15deg);
+			background-color: #404040;
+			border: 2px solid #1a1a1a;
+			position: absolute;
+			left: 60%;top: 3%;
+		}
+		.trapezium{
+			width: 130px;
+			height: 0;
+			text-align: center;
+			color: white;
+			border-left: 30px solid transparent;
+			border-right: 30px solid transparent;
+			border-bottom: 80px solid black;
+			background-color: coral;
+		}
+		.triangle{
+			width: 0;
+			height: 0;
+			color: hotpink;
+			border-left: 70px solid transparent;
+			border-right: 70px solid transparent;
+			border-bottom: 80px solid powderblue;
+			background-color: navy;
+			position: absolute;
+			left: 20%;top: 44%;
 		}
 	</style>
 </head>
@@ -63,6 +95,12 @@
 <div class="parallelogram">
 	<p>parallelogram</p>
 </div>
+<div class="trapezium">
+	<p>Trapezium</p>
+</div>
 <br>
+<div class="triangle">
+	<p>Triangle</p>
+</div>
 </body>
 </html>
