@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>vertical nav bar</title>
+<style>
+body {
+  background:repeating-linear-gradient(49deg,mediumspringgreen,palegoldenrod,palevioletred);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  font-size: 19px;
+  font-family: Cursive;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 15%;
+  border: 2px solid gray;
+  background-color: burlywood;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  line-height:30px;
+  box-shadow: 3px 0 12px #d3a15f;
+  }
+
+li a {
+  display: block;
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  margin-top: 3%;
+  transition: 0.4s;
+}
+
+li a.active {
+  background-color: green;
+  color: white;
+  border-right: 4px solid lightgreen;
+  box-shadow: 0 2px 7px #7bea7b;
+}
+
+li a:hover:not(.active) {
+  background-color: coral;
+  color: black;
+  border-right:5px solid crimson;
+  box-shadow: 0 2px 10px #eb2d53;
+}
+
+#search{
+  width: 100%;
+  font-size: 20px;
+  padding: 5px 8px;
+  background-color: #404040;color: white;
+  transition: 0.5s;
+  border:1.5px solid transparent;
+}
+#search:hover{background-color: #262626;  border: 1.5px solid #1a1a1a;  box-shadow: 0 2px 8px #333333;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><input type="search" id="search" title="text to search..." value=" Search ..." onfocus="this.value=''" onblur="this.value=' Search ...'"></li>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#product">Product</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+<div style="margin-left:16%;padding:2px 16px;height:1500px;">
+  <h2>Fixed Full-height Side Nav</h2>
+  <h3>Try to scroll this area, and see how the sidenav sticks to the page</h3>
+  <p>Notice that this div element has a left margin of 25%. This is because the side navigation is set to 25% width. If you remove the margin, the sidenav will overlay/sit on top of this div.</p>
+  <p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too long (for example if it has over 50 links inside of it).</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+</div>
+</body>
+</html>
