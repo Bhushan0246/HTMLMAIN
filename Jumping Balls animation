@@ -28,7 +28,7 @@
 		height: 15px;
 		background-color: red;
 		border-radius: 50%;
-		animation: jump 0.6s ease-out alternate infinite;
+		animation: jump 0.55s ease-in-out alternate infinite;
 	}
 	.circle-two{
 		width: 15px;
@@ -36,15 +36,15 @@
 		margin-left: 0.9%;
 		background-color: blue;
 		border-radius: 50%;
-		animation: jump 0.6s ease-out infinite alternate 0.13s;
+		animation: jump 0.55s ease-in-out infinite alternate 0.13s;
 	}
 	.circle-three{
 		width: 15px;
 		height: 14.5px;
-		margin-left: 0.9%;
+		margin-left: 1%;
 		background-color: green;
 		border-radius: 50%;
-		animation: jump 0.6s ease-out infinite alternate 0.25s;
+		animation: jump 0.55s ease-in-out infinite alternate 0.25s;
 	}
 	@keyframes jump{
 		100%{transform: translateY(-90px);}
@@ -62,7 +62,6 @@
 	</style>
 </head>
 <body>
-<h1> This is a jumping balls loader animation. </h1>
 <div id="container">
 	<div class="circle-one"> </div>
 	<div class="circle-two"> </div>
