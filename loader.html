@@ -95,85 +95,39 @@
 			border-radius: 50%;
 			box-shadow: 3px 3px 10px #ffeecc, -3px -3px 10px #ffeecc;
 			animation-name: drible;
-			animation-duration: 4s;
+			animation-duration: 2.7s;
 			animation-iteration-count: infinite;
+			animation-direction: alternate;
+			animation-timing-function: linear;
 		}
 		@keyframes drible{
-			0%{transform: rotate(0deg);top:0;}
-			100%{transform: rotate(360deg);top:40px;height: 263px;}
+			0%{top:0;}
+			100%{top:40px;height: 263px;transform: rotateY(180deg);}
 		}
 		#cir5{
-			width: 550px;
-			height: 200px;
+			width: 300px;
+			height: 150px;
 			background-color: #1a1a1a;
 		}
-		.cir1	{
+		.cir6{
 			display: inline-block;
-		width: 20px;
-		height: 20px;
-		margin-left: 21%;
-		position: absolute;
-		background-color: darkgoldenrod;
-		border-radius: 50%;
-		border:3px solid #f1b10e;
-		animation-name: cirw;
-		animation-duration: 1s;
-		animation-timing-function: linear;
-		animation-iteration-count: infinite;
-		animation-delay: 0s;
-		animation-direction: alternate;
+			width: 30px; height: 30px;
+			background-color: rgba(255, 255, 255, 0.5);
+			margin-left: 2.5%;
+			border: 1px dotted indianred;
+			border-radius: 50%;
 		}
-		@keyframes cirw{
-			0%{border:3px solid #f1b10e;opacity: 1;}
-			100%{border:13px solid #f1b10e;opacity: 0.2;}
-		}
+		.cir1{
+			animation: cir-sizing 0.7s linear infinite alternate;}
 		.cir2{
-			display: inline-block;
-			width: 20px;
-			height: 20px;
-			margin-left: 24%;
-			position: absolute;
-			background-color: green;
-			border:3px solid #00cc00;
-			border-radius: 50%;
-			animation: cirf 1s linear infinite alternate;
-			animation-delay: 0.3s;
-		}
-		@keyframes cirf{
-			0%{border:3px solid #00cc00;opacity: 1;}
-			100%{border:13px solid #00cc00;opacity: 0.2;}
-		}
+			animation: cir-sizing 0.7s linear infinite alternate;animation-delay: 0.1s;}
 		.cir3{
-			display: inline-block;
-			width: 20px;
-			height: 20px;
-			margin-left: 27%;
-			position: absolute;
-			background-color:crimson;
-			border:3px solid #ee4466;
-			border-radius: 50%;
-			animation: cira 1s linear infinite alternate;
-			animation-delay: 0.6s;
-		}
-		@keyframes cira{
-			0%{border:3px solid #ee4466;opacity: 1;}
-			100%{border:13px solid #ee4466;opacity: 0.2;}
-		}
+			animation: cir-sizing 0.7s linear infinite alternate;animation-delay: 0.21s;}
 		.cir4{
-			display: inline-block;
-			width: 20px;
-			height: 20px;
-			margin-left: 30%;
-			position: absolute;
-			background-color:blue;
-			border-radius: 50%;
-			border:3px solid #4d4dff;
-			animation: cirs 1s linear infinite alternate;
-			animation-delay: 0.7s;
-		}
-		@keyframes cirs{
-			0%{border:3px solid #4d4dff;opacity: 1;}
-			100%{border:13px solid #4d4dff;opacity: 0.2;}
+			animation: cir-sizing 0.7s linear infinite alternate;animation-delay: 0.32s;}
+		@keyframes cir-sizing{
+			0%{transform: scale(0);}
+			100%{transform: scale(1);}
 		}
 		#loader{
 			background-color: #1a1a1a;
@@ -281,7 +235,7 @@
 	display: inline-block;
 	width: 20px;
 	height: 75px;
-	background-color: rgba(255, 255, 255, 0.7);
+	background-color: rgba(255, 255, 255, 0.5);
 	border-radius: 5px;
 	border: 0.4px solid powderblue;}
 .bar1{
@@ -329,10 +283,10 @@
 
 <h1>This is another but different circular loader animation.</h1>
 <section id="cir5"><br><br>
-<div class="cir1"></div>
-<div class="cir2"></div>
-<div class="cir3"></div>
-<div class="cir4"></div>
+<div class="cir1 cir6"></div>
+<div class="cir2 cir6"></div>
+<div class="cir3 cir6"></div>
+<div class="cir4 cir6"></div>
 </section>
 <br>
 
