@@ -7,13 +7,13 @@
 <style type="text/css">
 	html{scroll-behavior: smooth;}
 ::-webkit-scrollbar{width: 1rem;background:linear-gradient(47deg,powderblue,indianred,palegreen);perspective: 100px;}
-::-webkit-scrollbar-thumb{background-color: firebrick;border-radius: 20px;border: 2px solid #262626;};0
+::-webkit-scrollbar-thumb{background-color: firebrick;border-radius: 20px;border: 2px solid #262626};
 ::-webkit-scrollbar-corner { background: rgba(0,0,0,0.5); }
 	.circular	{
 		width: 130px;
 		height: 130px;
-		border-top:18px solid skyblue;
-		border-bottom:18px solid skyblue;
+		border-top:18px solid lightskyblue;
+		border-bottom:18px solid lightskyblue;
 		border-left:18px solid transparent;
 		border-right:18px solid transparent;
 		border-radius: 50%;
@@ -271,7 +271,36 @@
 @keyframes glow{
 	100%{text-shadow: 6px 6px 10px hotpink, -5px -5px 20px pink, 7px 7px 30px hotpink;color: #bfbfbf;}
 }
-		</style>
+#bars-wrap{
+	padding: 40px 150px;
+	width: 20%;
+	height: 90px;
+	background-color: rgba(0, 0, 0, 0.9);
+}
+.bars{
+	display: inline-block;
+	width: 20px;
+	height: 75px;
+	background-color: rgba(255, 255, 255, 0.7);
+	border-radius: 5px;
+	border: 0.4px solid powderblue;}
+.bar1{
+	animation: bigbar 0.5s linear infinite alternate;
+}
+.bar2{
+	animation: bigbar 0.5s linear infinite alternate 0.18s;
+}
+.bar3{
+	animation: bigbar 0.5s linear infinite alternate 0.3s;
+}
+.bar4{
+	animation: bigbar 0.5s linear infinite alternate 0.4s;
+}
+	@keyframes bigbar{
+	0%{transform: scaleY(1);}
+	100%{transform: scaleY(1.5);}
+}
+</style>
 </head>
 <body>
 	<h1>This is a circular loader animation.</h1>
@@ -331,5 +360,12 @@
 </div>
 </div>
 <br>
+<h1>This is a Bar loader.</h1>
+<div id="bars-wrap">
+<div class="bar1 bars"> </div>
+<div class="bar2 bars"> </div>
+<div class="bar3 bars"> </div>
+<div class="bar4 bars"> </div>
+</div>
 </body>
 </html>
