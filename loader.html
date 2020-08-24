@@ -118,16 +118,16 @@
 			border-radius: 50%;
 		}
 		.cir1{
-			animation: cir-sizing 0.7s linear infinite alternate;}
+			animation: cir-sizing 0.9s linear infinite alternate;}
 		.cir2{
-			animation: cir-sizing 0.7s linear infinite alternate;animation-delay: 0.1s;}
+			animation: cir-sizing 0.9s linear infinite alternate;animation-delay: 0.11s;}
 		.cir3{
-			animation: cir-sizing 0.7s linear infinite alternate;animation-delay: 0.21s;}
+			animation: cir-sizing 0.9s linear infinite alternate;animation-delay: 0.23s;}
 		.cir4{
-			animation: cir-sizing 0.7s linear infinite alternate;animation-delay: 0.32s;}
+			animation: cir-sizing 0.9s linear infinite alternate;animation-delay: 0.35s;}
 		@keyframes cir-sizing{
-			0%{transform: scale(0);}
-			100%{transform: scale(1);}
+			0%{transform: scale(0.2);}
+			100%{transform: scale(1.4);box-shadow: 1px 1px 10px rgba(255,255,255,0.7);}
 		}
 		#loader{
 			background-color: #1a1a1a;
@@ -200,7 +200,7 @@
 	background-color: #1a1a1a;
 	border-radius: 50%;
 	border:2px solid black;
-	width: 15px;
+	width: 18px;
 	height: 15px;
 	animation: movball 0.5s ease-in-out infinite alternate;
 }
@@ -254,6 +254,33 @@
 	0%{transform: scaleY(1);}
 	100%{transform: scaleY(1.5);}
 }
+#loading{
+	width: 600px; height: 150px;
+	text-align: center;
+	font-size: 25px;
+	color: rgba(255, 255, 255, 0.6);
+	background-color: rgba(0, 0, 0, 0.7);
+}
+.load-ing{
+	text-shadow: 2px 2px 7px rgba(255, 255, 255, 0.9);;
+	margin: 2.7%;
+	margin-top: 5%;
+	display: inline-block;
+	animation: letter 2s linear infinite alternate;
+}
+.o{animation-delay: 0.18s;}
+.a{animation-delay: 0.33s;}
+.d{animation-delay: 0.45s;}
+.i{animation-delay: 0.57s;}
+.n{animation-delay: 0.75s;}
+.g{animation-delay: 0.84s;}
+.dot1{animation-delay: 0.93s;}
+.dot2{animation-delay: 1s;}
+.dot3{animation-delay: 1.5s;}
+@keyframes letter{
+	0%{transform: scale(0.9);}
+	100%{transform: scale(3.3);}
+}
 </style>
 </head>
 <body>
@@ -283,10 +310,10 @@
 
 <h1>This is another but different circular loader animation.</h1>
 <section id="cir5"><br><br>
-<div class="cir1 cir6"></div>
-<div class="cir2 cir6"></div>
-<div class="cir3 cir6"></div>
-<div class="cir4 cir6"></div>
+<div class="cir1 cir6" style="background-color: indianred"></div>
+<div class="cir2 cir6" style="background-color: dodgerblue"></div>
+<div class="cir3 cir6" style="background-color: goldenrod"></div>
+<div class="cir4 cir6" style="background-color: forestgreen"></div>
 </section>
 <br>
 
@@ -321,5 +348,20 @@
 <div class="bar3 bars"> </div>
 <div class="bar4 bars"> </div>
 </div>
+<br>
+<h1>This is a letter sizing loader.</h1>
+<div id="loading">
+	<div class="l load-ing"> l </div>
+	<div class="o load-ing"> o </div>
+	<div class="a load-ing"> a </div>
+	<div class="d load-ing"> d </div>
+	<div class="i load-ing"> i </div>
+	<div class="n load-ing"> n </div>
+	<div class="g load-ing"> g </div>
+	<div class="dot1 load-ing"> . </div>
+	<div class="dot2 load-ing"> . </div>
+	<div class="dot3 load-ing"> . </div>
+</div>
+<br>
 </body>
 </html>
