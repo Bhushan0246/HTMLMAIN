@@ -3,21 +3,22 @@
 <head>
 	<title> Progress Bar </title>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style type="text/css">
-	html{background-image: url(https://wallpaperaccess.com/full/1573753.jpg);
-			background-size: cover;
-			background-attachment: local;
-			text-align: center;
+	html{
+		background-image: url(https://wallpaperaccess.com/full/1573753.jpg);
+		background-size: cover;
+		background-attachment: local;
+		text-align: center;
 	}
 	progress{
 		height: 30px; width: 75%;
 	}
 	</style>
-	
 </head>
 <body>
-<h2>Tis is a simple progress bar.</h2>
-<progress value="45" max="100">
+<h2>This is a simple progress bar.</h2>
+<progress value="50" max="100">
 <br>
 </body>
 </html>
