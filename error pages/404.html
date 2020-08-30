@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> page not found </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+	<style type="text/css">
+		body{
+			background: linear-gradient(100deg, #ff4d4d,#6666ff, #006600);
+		}
+		.wrap{
+			width: 70%;
+			position: absolute;
+			border: 7px double #fff;
+			border-top-right-radius: 40px;
+			border-bottom-left-radius: 60px;
+			display: grid;
+			grid-template-columns: calc((100%)/3) calc((100%)/3);
+			justify-content: center;
+			grid-column-gap: 10px;
+			align-items: center;
+			color: #ccccff;
+			left: 14.5%;
+			top: 12%;
+		}
+		.intro{
+			font-family: courier;
+			padding: 10px 5px;
+			font-size: 40px;
+		}
+		.detail{
+			font-family: 'Quicksand' ,cursive;
+			border-left: 2px dashed #fff;
+			text-align: center;
+			padding-left: 25%;
+			font-size: 30px;
+		}
+		.fa-search{font-size: 90px;}
+		big{
+			color: rgba(204, 204, 255, 0.3); 
+			font-size: 75px;
+			animation: glow 1.5s infinite alternate;
+		}
+		@keyframes glow{
+			0%{color: rgba(204, 204, 255, 0.3);
+				text-shadow: 0 0 1px rgb(230, 230, 255);}
+			100%{color: rgba(204, 204, 255, 0.9);
+				text-shadow: 1px 1px 4px #b3b3ff;}
+		}
+	</style>
+</head>
+<body>
+<div class="wrap">
+	<p class="intro">
+		<big>Oops!<br>
+		Error 4<i class="fa fa-question-circle"></i>4 </big><i class="fa fa-search"></i>
+		Something Went Wrong!
+</p>
+<p class="detail">Sorry! The page you have searched for can not be found.&nbsp;
+It may be moved, renamed, deleted or may be temporarily unavailable.
+</p>
+</div>
+</body>
+</html>
