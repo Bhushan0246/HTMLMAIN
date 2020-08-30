@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Error 400</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+	<style type="text/css">
+		body{
+			font-size: 28px;
+			background-image: url(https://cdn.hipwallpaper.com/i/94/76/lP2iWB.jpg);
+			background-size: cover;
+			background-attachment: fixed;
+			color:  #668cff;
+		}
+		hr{
+			height: 0;
+			border: 3px solid #809fff;
+			border-radius: 6px;
+		}
+		div{
+			background-image: url(https://cdn.pixabay.com/photo/2019/02/23/11/49/galaxy-icon-4015403_960_720.png);
+			background-size: 96% 110%;
+			font-family: 'Indie Flower', cursive;
+			top: 5%;
+			left: 10%;
+			width: 70%;
+			position: fixed;
+			padding: 10px 15px;
+		}
+		.fa-info{
+			font-size: 50px;
+			border: 1.5px solid #0033cc;
+			color: #0033cc;
+			padding: 2px 20px;
+			border-radius: 50%;
+		}
+		big{font-size: 45px;}
+		a{color: #3366ff;}
+		a:hover{color:#0039e6;}
+		img{
+			width: 18%;
+			z-index: 1;
+			position: fixed;
+			top: 30%;
+			right: 5%;
+			transform: rotate(125deg);
+		}
+	</style>
+</head>
+<body>
+	<img src="https://cdn3.iconfinder.com/data/icons/space-aliens-volume-2/64/space-shuttle-launch-512.png">
+<div class="">
+	<i class="fa fa-info"></i>&nbsp;HTTP <big>400</big> error (Bad request)
+	<hr>
+	<ul>Likely causes: 
+		<li>There might be a typing error in address.</li>
+		<li>Link may be out of date.</li>
+		<li>The header to define address may be too long.</li>
+	</ul>
+	<ul>
+	Try this:
+	<li>Try refreshing the page.</li>
+	<li>Retype the address.</li>
+	<li>go back to the previous page.</li>
+	</ul> 
+	If the problem continues <a href="https://github.com/login?return_to=%2FBhushan0246" target="_blank">contact us </a>and we will help you to get your way.
+</div>
+</body>
+</html>
