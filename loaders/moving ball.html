@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>moving ball loader</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width" initial-scale="1.0">
+<style type="text/css">
+	body{
+		text-align: center;
+		animation: background 12s linear infinite alternate;
+		animation-fill-mode: both;
+	}
+	@keyframes background{
+		0%{background-color: #00b3b3}
+		20%{background-color: }
+		40%{background-color: #2eb82e}
+		60%{background-color: #e62e00}
+		80%{background-color: #cccc00}
+		100%{background-color: #d633ff}
+	}
+.ball-c{
+	background-color: #1a1a1a;
+	border-radius: 50%;
+	border:2px solid black;
+	margin-top: 5%;
+	width: 30px;
+	height: 32px;
+	box-shadow: 2px 2px 10px floralwhite;
+	animation: movball 2.5s ease-in-out infinite alternate;
+}
+@keyframes movball{
+	0%{margin-left: 33%;}
+	100%{margin-left:64%;width: 33px;}
+}
+</style>
+</head>
+<body>
+<h1>This is a simple moving ball loader.</h1>
+<div class="ball-wrap">
+	<p class="ball-c"></p>
+</div>
+<br>
+</body>
+</html>
