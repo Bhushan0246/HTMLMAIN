@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>simple loader</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width" initial-scale="1.0">
+<style type="text/css">
+	body{
+		text-align: center;
+		background-color: lightsalmon;
+	}
+	.single{
+	width: 35vmin;
+	height: 35vmin;
+	margin-left: 38vmax;
+	border:2em solid cyan;
+	border-top-color: dodgerblue;
+	border-radius: 50%;
+	animation: single 1.7s cubic-bezier(1,0.7,1,1) infinite; 
+}
+@keyframes single{
+	0%{transform: rotate(0deg);}
+	100%{transform: rotate(360deg);}
+}
+</style>
+</head>
+<body>
+<div>
+	<h1>This is a loader containing a single ring. </h1>
+	<br> <div class="single">		
+	</div>
+</div>
+<br>
+</body>
+</html>
