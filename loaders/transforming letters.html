@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>simple loader</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width" initial-scale="1.0">
+<style type="text/css">
+	body{
+		text-align: center;
+		    background: linear-gradient(85deg, #003399, #993333);
+	}
+	h1{color: burlywood;}
+	#loading{
+	text-align: center;
+	font-size: 25px;
+	color: rgba(255, 255, 255, 0.6);
+}
+.load-ing{
+	text-shadow: 2px 2px 7px rgba(255, 255, 255, 0.9);;
+	margin: 2.7%;
+	margin-top: 5%;
+	display: inline-block;
+	animation: letter 2s linear infinite alternate;
+}
+.o{animation-delay: 0.18s;}
+.a{animation-delay: 0.33s;}
+.d{animation-delay: 0.45s;}
+.i{animation-delay: 0.57s;}
+.n{animation-delay: 0.72s;}
+.g{animation-delay: 0.84s;}
+.dot1{animation-delay: 0.93s;}
+.dot2{animation-delay: 1s;}
+.dot3{animation-delay: 1.5s;}
+@keyframes letter{
+	0%{transform: scale(0.9);}
+	100%{transform: scale(3.3);}
+}
+</style>
+</head>
+<body>
+<h1>This is a letter sizing loader.</h1>
+<div id="loading">
+	<div class="l load-ing"> l </div>
+	<div class="o load-ing"> o </div>
+	<div class="a load-ing"> a </div>
+	<div class="d load-ing"> d </div>
+	<div class="i load-ing"> i </div>
+	<div class="n load-ing"> n </div>
+	<div class="g load-ing"> g </div>
+	<div class="dot1 load-ing"> . </div>
+	<div class="dot2 load-ing"> . </div>
+	<div class="dot3 load-ing"> . </div>
+</div>
+<br>
+</body>
+</html>
