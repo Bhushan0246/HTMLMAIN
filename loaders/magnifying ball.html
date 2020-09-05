@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>magnifying ball loader</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width" initial-scale="1.0">
+<style type="text/css">
+	body{
+		text-align: center;
+		color: white;
+		background-color: #262626;
+	}
+		.cir{
+			display: inline-block;
+			width: 30px; height: 31px;
+			background-color: rgba(255, 255, 255, 0.5);
+			margin-left: 5%;
+			border: 1px dotted indianred;
+			border-radius: 50%;
+		}
+		.cir1{
+			animation: cir-sizing 0.9s linear infinite alternate;}
+		.cir2{
+			animation: cir-sizing 0.9s linear infinite alternate;animation-delay: 0.15s;}
+		.cir3{
+			animation: cir-sizing 0.9s linear infinite alternate;animation-delay: 0.27s;}
+		.cir4{
+			animation: cir-sizing 0.9s linear infinite alternate;animation-delay: 0.4s;}
+		@keyframes cir-sizing{
+			0%{transform: scale(0.2);}
+			100%{transform: scale(1.5);box-shadow: 1px 1px 10px rgba(255,255,255,0.7);}
+		}
+</style>
+</head>
+<body>
+<h1>This is a magnifing ball loader making waves.</h1>
+<section id="wrap"><br><br>
+<div class="cir1 cir" style="background-color: indianred"></div>
+<div class="cir2 cir" style="background-color: dodgerblue"></div>
+<div class="cir3 cir" style="background-color: goldenrod"></div>
+<div class="cir4 cir" style="background-color: forestgreen"></div>
+</section>
+<br>
+</body>
+</html>
