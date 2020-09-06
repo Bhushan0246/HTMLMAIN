@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width" initial-scale="1.0">
+<style type="text/css">
+	body{
+		background-color: ghostwhite;
+	}
+		.drible{
+			margin-left: 30%;
+			width: 260px;
+			height: 256px;
+			background-color: #fff7cc;
+			border-radius: 50%;
+			box-shadow: 3px 3px 15px #11eecc, -5px -5px 16px #ffeecc;
+			animation-name: drible;
+			animation-duration: 2.7s;
+			animation-direction: alternate-reverse;
+			animation-iteration-count: infinite;
+			animation-timing-function: linear;
+		}
+		@keyframes drible{
+			0%{top:0;}
+			100%{top:40px;height: 263px;transform: rotateY(180deg);}
+		}
+</style>
+</head>
+<body>
+<h1>This is a Bright loader.</h1>
+<section id="drible"><br><br><br>
+<div class="drible"></div>
+</section>
+</body>
+</html>
