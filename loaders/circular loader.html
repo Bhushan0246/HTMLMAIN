@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>1 ring loader</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width" initial-scale="1.0">
+<style type="text/css">
+	body{
+		background-color: palegreen;
+	}
+	.circular	{
+		width: 130px;
+		height: 130px;
+		margin-left: 35%;
+		margin-top: 12%;
+		border:18px solid transparent;
+		border-bottom:18px solid dodgerblue;
+		border-top:18px solid dodgerblue;
+		border-radius: 50%;
+		animation-name: load;
+		animation-duration: 2s;
+		animation-timing-function: ease-out;
+		animation-iteration-count: infinite;
+		}
+		@keyframes load{
+			0%{
+				transform: rotate(360deg);
+			}
+			100%{
+				transform: rotate(0);
+			}
+		}
+	.circular_two{
+		width: 90px;
+		height: 90px;
+		position: absolute;
+		left: 36.7%;
+		top: 40%;
+		border:18px solid transparent;
+		border-bottom:18px solid indianred;
+		border-top:18px solid indianred;
+		border-radius: 50%;
+		animation-name: load_two;
+		animation-duration: 1.5s;
+		animation-timing-function: ease-in-out;
+		animation-iteration-count: infinite;
+		}
+		@keyframes load_two{
+			0%{
+				transform: rotate(0);
+			}
+			100%{
+				transform: rotate(360deg);
+			}
+		}
+</style>
+</head>
+<body>
+	<h1>This is a double ring circular loader animation.</h1>
+<div class="circular">
+</div>
+<div class="circular_two">
+</div>
+<br>
+
+</body>
+</html>
