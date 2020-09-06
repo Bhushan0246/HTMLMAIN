@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>glowing text loader</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width" initial-scale="1.0">
+<style type="text/css">
+	body{
+		text-align: center;
+		color: #ffffff;
+		background-color: #100910;
+	}
+	.glowing-wrap{
+		margin-top: 9%;
+	text-align: center;
+}
+.glowing{
+	font-size: 100px;
+	font-family: cursive;
+	font-weight: bold;
+	color: white;
+	text-shadow: 5px 5px 4px hotpink, -5px -5px 4px pink, 6px 6px 5px hotpink;
+	animation: glow 1s linear infinite alternate;
+}
+@keyframes glow{
+	100%{text-shadow: 6px 6px 10px hotpink, -5px -5px 20px pink, 7px 7px 30px hotpink;color: #bfbfbf;}
+}
+</style>
+</head>
+<body>
+<h1>This is a glowing loading text.</h1>
+<div class="glowing-wrap">
+<div class="glowing">
+	Loading...
+</div>
+</div>
+<br>
+</body>
+</html>
