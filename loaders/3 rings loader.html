@@ -1,0 +1,71 @@
+<html>
+<head>
+<title>3 rings loader</title>
+<style>
+	body{
+			background-color: #1a1a1a;
+            overflow: hidden;
+		}
+        #wrap{margin-left: 40%;margin-top: 13%;}
+        .loader1{
+        position: absolute;
+        width: 250px;
+        height:249px;
+        border:8px solid transparent;
+        border-top: 8px solid lightgreen;
+        border-right: 8px solid lightgreen;
+        border-radius:50%;
+        animation: spin1 1.7s linear infinite;
+        }
+        .loader2{
+        position: absolute;
+        top: 29.8%;
+        left: 41.3%;
+        width: 220px;
+        height:220px;
+        border:8px solid transparent;
+        border-bottom: 7px solid skyblue;
+        border-right: 7px solid skyblue;
+        border-radius:50%;
+        animation: spin2 2s linear infinite;
+        }
+        .loader3{
+        position: absolute;
+        top: 31.6%;
+        left: 42%;
+        width: 200px;
+        height:199px;
+        border:8px solid transparent;
+        border-top: 6px solid hotpink;
+        border-left: 6px solid hotpink;
+        border-radius:50%;
+        animation: spin3 1.5s linear infinite;
+        }
+@keyframes spin1 {
+  100% {
+    transform:rotate(360deg);
+  }
+}
+@keyframes spin2 {
+  100% {
+    transform:rotate(360deg);
+  }
+}
+@keyframes spin3 {
+  100% {
+    transform:rotate(360deg);
+  }
+}
+</style>
+</head>
+<body> 
+<div id="wrap">
+<div class="loader1">
+</div>
+<div class="loader2">
+</div>
+<div class="loader3">
+</div>
+</div>
+</body>
+</html>
