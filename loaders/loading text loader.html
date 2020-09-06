@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bar loader</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width" initial-scale="1.0">
+<style type="text/css">
+	body{
+		background-color: goldenrod;
+	}
+		#wrap{
+			text-align: center;
+			font-size: 28px;
+			}
+		.slide{
+			border-radius: 18px;
+			width: 3%;
+			height: 15px;
+			margin-left: 38%;
+			margin-top: 3%;
+			background-color: yellow;
+			animation-name: fill;
+			animation-iteration-count: infinite;
+			animation-timing-function: linear;
+			animation-duration: 4s;
+			animation-fill-mode: forwards;
+			animation-direction: alternate;
+			}
+		@keyframes fill{
+			0%{width: 3%;}
+			100%{width: 24%;border-radius: 6px;}
+		}
+</style>
+</head>
+<body>
+	<h1>This is a simple bar loading animation.</h1>
+<section id="wrap">Loading .....
+<div class="slide">
+</div>
+</section>
+</body>
+</html>
