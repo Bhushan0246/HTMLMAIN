@@ -1,24 +1,20 @@
 <DOCTYPE html>
 <html>
 <head>
-	<title>Operating System
-	</title>
+	<title>Operating System</title>
 <style> 
 	body{
-		background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQHY_l6VXxHStuNUZDMfpSvKyvoTldhPXRNnOzL7rp15vZmYczo&usqp=CAU");
+		background-image:url("https://imgs.abduzeedo.com/files/wallpapers/wpw245/wp_1680.jpg");
 		background-repeat:no-repeat;
 		background-size:cover;
 		background-attachment:fixed;
+        font-family: cursive;
 	} 
-    #a{
-        background-image:url("");
-        background-repeat:no-repeat;
-        background-size:cover;
-        background-attachment:fixed;
-        font-color:white;
-    }
     h1{
         border:4px dotted;
+    }
+    pre{
+        font-size: 16px;
     }
 </style>
 </head>
@@ -28,7 +24,7 @@
 
 Some popular Operating Systems include Linux Operating System, Windows Operating System, VMS, OS/400, AIX, z/OS, etc.</p> 
 <p><b>Definition</b>
-An operating system is a program that acts as an interface between the user and the computer hardware and controls the execution of all kinds of programs.<div><img src="https://www.tutorialspoint.com/operating_system/images/conceptual_view.jpg"></div></p>
+An operating system is a program that acts as an interface between the user and the computer hardware and controls the execution of all kinds of programs.<div><img src="https://www.tutorialspoint.com/operating_system/images/concetual_view.jpg"></div></p>
 <p>
 	Following are some of important functions of an operating System.
 <ol>
@@ -85,8 +81,6 @@ Following are some of the important activities that an Operating System performs
 <li>    Job accounting − Keeping track of time and resources used by various jobs and users.</li>
 <li>    Error detecting aids − Production of dumps, traces, error messages, and other debugging and error detecting aids.</li>
 <li>    Coordination between other softwares and users − Coordination and assignment of compilers, interpreters, assemblers and other software </li>to the various users of the comput
-   
 </div>
-
 </body>
 </html>
