@@ -1,135 +1,133 @@
-<doctype html>
+<!doctype html>
 <html>
 <head>
-<title>
-	Table
-</title>
+<title> Table </title>
 <style>
-	body{
-		font-size:18px;
-		color:midnightblue;
-		background-image:url("https://wallpaperplay.com/walls/full/0/9/0/15252.jpg"); 
-		background-size:cover;
-		background-attachment:fixed;
-		background-repeat:no-repeat;
-	}
-	table{
-		font-size:17px;
-		padding:20px;
-		border-radius:40px;
-		border:8px double fuchsia;
-		background-color:navajowhite;
-		margin-top:9%;
-		margin-right:32%;
-		opacity:0.4;
-		border-spacing:6px; 
-	}
-	table:hover{
-		opacity:0.7;
-		font-family:ArialVerdana
-	}
-	.a{
-		color:red;
-		background-color:lightgreen;
-	}
-	#b{
-		color:blue;
-		background-color:goldenrod;
-	}
+    body{
+        font-size:18px;
+        color:midnightblue;
+        background-image:url("https://i.imgur.com/JpeOFaE.jpg"); 
+        background-size:cover;
+        background-attachment:fixed;
+        background-repeat:no-repeat;
+    }
+    table{
+        font-size:17px;
+        padding:20px;
+        border-radius:40px;
+        border:2px dotted fuchsia;
+        background-color:transparent;
+        margin-left:auto;
+        margin-right:auto;
+        opacity:0.2;
+        border-spacing:6px; 
+    }
+    table:hover{opacity:0.7;}
+    td,th{
+        text-align: center;
+        padding: 3px 2px;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    .a{
+        color:goldenrod;
+    }
+    #b{
+        color:ghostwhite;
+    }
 </style>
 </head>
-<body><pre><b><big>		A company's Employee data table</big></b></pre>
-	<div>
-	<table align="center">
-		<tr>
+<body><pre><b><big>     A company's Employee data table</big></b></pre>
+    <div>
+    <table align="center">
+        <tr>
 <th class="a">Emp no.</th>
 <th id="b">Name</th>
 <th class="a">job</th>
 <th id="b">join date</th>
 <th class="a">salary</th>
 <th id="b">department</th>
-		</tr>
-		<tr>
-			<td id="b">01</td>
-			<td class="a">JOHNSON</td>
-			<td id="b">Admin</td>
-			<td class="a">17/12/1998</td>
-			<td id="b">20000.00</td>
-			<td class="a">2</td>
-		</tr>
-		<tr>
-			<td class="a">02</td>
-			<td id="b">HARRY</td>
-			<td class="a">Manager</td>
-			<td id="b">02/02/1998</td>
-			<td class="a">50000.00</td>
-			<td id="b">3</td>
-		</tr>
-		<tr>
-			<td id="b">03</td>
-			<td class="a">TAFT</td>
-			<td id="b">Sales I</td>
-			<td class="a">02/04/1996</td>
-			<td id="b">25000.00</td>
-			<td class="a">3</td>
-		</tr>
-		<tr>
-			<td class="a">04</td>
-			<td id="b">HOOVER</td>
-			<td class="a">Sales I</td>
-			<td id="b">02/01/1999</td>
-			<td class="a">28000.00</td>
-			<td id="b">4</td>
-		</tr>
-		<tr>
-			<td id="b">05</td>
-			<td class="a">LINCOLN</td>
-			<td id="b">Technology</td>
-			<td class="a">23/03/1994</td>
-			<td id="b">22500.00</td>
-			<td class="a">2</td>
-		</tr>
-		<tr>
-			<td class="a">06</td>
-			<td id="b">GARFIELD</td>
-			<td class="a">Manager</td>
-			<td id="b">01/05/1993</td>
-			<td class="a">54000.00</td>
-			<td id="b">4</td>
-		</tr>
-		<tr>
-			<td id="b">07</td>
-			<td class="a">POLK</td>
-			<td id="b">Technology</td>
-			<td class="a">22/09/1997</td>
-			<td id="b">26000.00</td>
-			<td class="a">1</td>
-		</tr>
-		<tr>
-			<td class="a">08</td>
-			<td id="b">GRANT</td>
-			<td class="a">Engine</td>
-			<td id="b">30/03/1997</td>
-			<td class="a">32000.00</td>
-			<td id="b">2</td>
-		</tr>
-		<tr>
-			<td id="b">09</td>
-			<td class="a">JACKSON</td>
-			<td id="b">CEO</td>
-			<td class="a">01/01/1990</td>
-			<td id="b">76000.00</td>
-			<td class="a">1</td>
-		</tr>
-		<tr>
-			<td class="a">10</td>
-			<td id="b">MONROE</td>
-			<td class="a">Admin</td>
-			<td id="b">03/11/2000</td>
-			<td class="a">18500.00</td>
-			<td id="b">3</td>
-		</tr>
-			</table>
+        </tr>
+        <tr>
+            <td id="b">01</td>
+            <td class="a">JOHNSON</td>
+            <td id="b">Admin</td>
+            <td class="a">17/12/1998</td>
+            <td id="b">20000.00</td>
+            <td class="a">2</td>
+        </tr>
+        <tr>
+            <td class="a">02</td>
+            <td id="b">HARRY</td>
+            <td class="a">Manager</td>
+            <td id="b">02/02/1998</td>
+            <td class="a">50000.00</td>
+            <td id="b">3</td>
+        </tr>
+        <tr>
+            <td id="b">03</td>
+            <td class="a">TAFT</td>
+            <td id="b">Sales I</td>
+            <td class="a">02/04/1996</td>
+            <td id="b">25000.00</td>
+            <td class="a">3</td>
+        </tr>
+        <tr>
+            <td class="a">04</td>
+            <td id="b">HOOVER</td>
+            <td class="a">Sales I</td>
+            <td id="b">02/01/1999</td>
+            <td class="a">28000.00</td>
+            <td id="b">4</td>
+        </tr>
+        <tr>
+            <td id="b">05</td>
+            <td class="a">LINCOLN</td>
+            <td id="b">Technology</td>
+            <td class="a">23/03/1994</td>
+            <td id="b">22500.00</td>
+            <td class="a">2</td>
+        </tr>
+        <tr>
+            <td class="a">06</td>
+            <td id="b">GARFIELD</td>
+            <td class="a">Manager</td>
+            <td id="b">01/05/1993</td>
+            <td class="a">54000.00</td>
+            <td id="b">4</td>
+        </tr>
+        <tr>
+            <td id="b">07</td>
+            <td class="a">POLK</td>
+            <td id="b">Technology</td>
+            <td class="a">22/09/1997</td>
+            <td id="b">26000.00</td>
+            <td class="a">1</td>
+        </tr>
+        <tr>
+            <td class="a">08</td>
+            <td id="b">GRANT</td>
+            <td class="a">Engine</td>
+            <td id="b">30/03/1997</td>
+            <td class="a">32000.00</td>
+            <td id="b">2</td>
+        </tr>
+        <tr>
+            <td id="b">09</td>
+            <td class="a">JACKSON</td>
+            <td id="b">CEO</td>
+            <td class="a">01/01/1990</td>
+            <td id="b">76000.00</td>
+            <td class="a">1</td>
+        </tr>
+        <tr>
+            <td class="a">10</td>
+            <td id="b">MONROE</td>
+            <td class="a">Admin</td>
+            <td id="b">03/11/2000</td>
+            <td class="a">18500.00</td>
+            <td id="b">3</td>
+        </tr>
+            </table>
 </div>
 </body>
 </html>
