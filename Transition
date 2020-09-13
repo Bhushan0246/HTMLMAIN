@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Transition and column</title>
-	<style>
-		.transition {
+<title>Transition and column</title>
+<style>
+	.transition {
   width: 100px;
   height: 100px;
   background: red;
@@ -12,7 +12,6 @@
   transition-timing-function: linear;
   transition-delay: 500ms;
 }
-/*the short hand for transition effect is transition:property duration timing-function delay;*/
 .transition:hover {
   width: 250px;
   height: 220px;
