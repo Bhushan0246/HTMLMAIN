@@ -20,12 +20,13 @@
 	</style>
 </head>
 <body>
-<!--audio-->
 <audio controls loop>
-  <source src="songs/06 Teri Isi Adaa Pe Sanam.mp3" type="audio/mp3" >
+  <source src="songs/moto.mp3" type="audio/mp3" >
   </audio><br>
   <br><!--to input a youtube video right click on video and select last option stats for needs and copy the video ID and paste by replaciing the last 7IyZ7S3lHN0and put a ?.-->
-<iframe src="https://www.youtube.com/embed/7IyZ7S3lHN0?"></iframe>
+<iframe src="https://www.youtube.com/embed/7IyZ7S3lHN0?">
+Your browser does not support the iframe element.
+</iframe>
 <video controls autoplay="1" loop>
 	<source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
 	Sorry, your browser can not support this video.
