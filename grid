@@ -1,13 +1,14 @@
-<doctype html>
-	<html>
-	<head><title>grid</title>
-	</head>
-	<style>
-		.main{
-			background-image:repeating-radial-gradient(yellow,powderblue,lightpink);
-			background-attachment:fixed;
-			background-repeat:no-repeat;
-		}
+<!doctype html>
+<html>
+<head>
+<title>grid</title>
+</head>
+<style>
+.main{
+	background-image:repeating-radial-gradient(yellow,powderblue,lightpink);
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+}
   .d1{background:LightSkyBlue;}
   .d2{background:LightSalmon;}
   .d3{
@@ -110,9 +111,9 @@ img{
 <div class="button-dropdown"><br>
 <button>Dropdown</button><br>
 <div class="button-dropdown-content">
-  <a href="#">link 1</a>
-  <a href="#">link 2</a>
-  <a href="#">link 3</a><br>
+  <a href="#link1">link 1</a>
+  <a href="#link2">link 2</a>
+  <a href="#link3">link 3</a><br>
 </div>
 </div>
 <div class="dropdown-gif">hover over me to see a image.
