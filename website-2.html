@@ -1,19 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1"> 
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-
 <style>
   html{
     scroll-behavior: smooth;
   }
 body {
-  background-image: url("https://thumbs.dreamstime.com/b/fall-leaves-background-27945468.jpg");
+  background-image: url("https://wallpaperset.com/w/full/e/5/2/453855.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-attachment: fixed;
@@ -23,44 +20,49 @@ body {
 }
 
 .sidenav{
-	word-spacing: 300px;
-	width: 100%;
-	padding: 4px 0;
-	top: -7%;
-	background-color: rgba(0, 0, 0, 0.95);
-	position: fixed;
-	border-radius: 6px;
-	border: 2px solid black;
-	font-size: 28px;
-	transition: 0.3s;
-	z-index: 2;
+    word-spacing: 300px;
+    width: 100%;
+    padding: 4px 0;
+    top: -7%;
+    background-color: rgba(0, 0, 0, 0.95);
+    position: fixed;
+    border-radius: 6px;
+    border: 2px solid black;
+    font-size: 28px;
+    transition: 0.3s;
+    z-index: 2;
 }
 
-.sidenav:hover{top: 0;}
+.sidenav:hover{
+    top: 0;
+    }
 
 .sidenav a{
-	display: inline-block;
-	padding: 2px 0;
-	text-decoration: none;
-	color: rgba(255, 255, 255, 0.4);
+    display: inline-block;
+    padding: 2px 0;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.4);
 }
+    
 .sidenav a:hover{
-	padding: 0 0;
-	color: rgba(255, 255, 255, 0.8);
-	border-bottom: 3px solid #ffd480;
-	border-radius: 5px;
+    padding: 0 0;
+    color: rgba(255, 255, 255, 0.8);
+    border-bottom: 3px solid #ffd480;
+    border-radius: 5px;
 }
+    
 .fa-arrow-down{
-	position: fixed;
-	top: 0.5%;right: 0%;
-	z-index: 1;
-	font-size: 30px;
-	padding: 4px;
-	color: white;
-	background-color: #262626;
-	border-radius: 44%;
-	border: 3px solid #1a1a1a;
+    position: fixed;
+    top: 0.5%;right: 0%;
+    z-index: 1;
+    font-size: 30px;
+    padding: 4px;
+    color: white;
+    background-color: #262626;
+    border-radius: 44%;
+    border: 3px solid #1a1a1a;
 }
+    
 #bio{
   width:100%;
   height:700px;
@@ -70,11 +72,13 @@ body {
   background-repeat:no-repeat;
   background-size:cover;
 }
+    
 h1{
   height: 640px;
   padding-top: 270px;
   font-size: 70px;
 }
+    
 #gallery{
   background-image: url(https://9walls.net/wp-content/uploads/2019/04/abstract-squares-in-blue-hd-high-definition-widescreen-wallpapers-free-download-mobile-pc-computer-desktop-tablet-android-high-resolution-backgrounds.jpg);
   background-size: cover;
@@ -85,6 +89,7 @@ grid-template-columns:calc((80%)/2) calc((80%)/2);
 grid-gap: 30px; 
 justify-content: center;
 }
+    
 #games{
   font-size: 38px;
 display: grid;
@@ -94,13 +99,18 @@ justify-content: center;
 background-image: url('https://images.assetsdelivery.com/compings_v2/doozydo/doozydo1801/doozydo180103095.jpg');
 background-size: 52% 100%;
 }
-#games p{margin-top: 30%;}
+    
+#games p{
+    margin-top: 30%;
+}
+    
 #connect{
   background-image:url("https://images2.alphacoders.com/506/506168.jpg");
   background-size: cover;
   width: 100%;
   margin-left: ;
 }
+    
 form{
   width: 97%;
   height: 600px;
@@ -109,6 +119,7 @@ form{
   font-size: 18px;
   text-align: center;
 }
+    
 input, textarea{
   width: 30%;
   margin-top: 5%;
@@ -117,11 +128,31 @@ input, textarea{
   border-bottom: 2px solid #333333;
   margin-left: 3%;
 }
-::placeholder{color: #262626;}
-label{width: 33%;margin-top: 2%;font-size: 27px;}
-button{margin: 3% 5% 2% 5%;color:black;background-color: transparent;border: 2px solid #262626;}
-button[type=reset]:hover{background-color: orangered;}
-button[type=submit]:hover{background-color: green;}
+
+input[contenteditable],textarea[contenteditable]{
+    outline: 0px solid transparent;
+}
+    
+::placeholder{
+    color: #262626;
+}
+label{
+    width: 33%;
+    margin-top: 2%;
+    font-size: 27px;
+}
+button{
+    margin: 3% 5% 2% 5%;
+    color:black;
+    background-color: transparent;
+    border: 2px solid #262626;
+}
+button[type=reset]:hover{
+    background-color: orangered;
+}
+button[type=submit]:hover{
+    background-color: green;
+}
 </style>
 </head>
 <body>
@@ -165,11 +196,11 @@ button[type=submit]:hover{background-color: green;}
   <br>
   <form>
     <br>
-    <input type="text" name="ft name" placeholder="&nbsp;first name *" required value="">
-    <input type="text" name="lt name" placeholder="&nbsp;last name *" required value=""><br>
-    <input type="email" name="email" placeholder="&nbsp;e-mail *" required value="">
-    <input type="text" name="f-game" placeholder="&nbsp;favourite game" value=""><br>
-    <textarea name="enquiry" rows="3" placeholder="&nbsp; enquiry about *" required value=""></textarea>
+    <input type="text" name="ft name" placeholder="&nbsp;first name *" required value="" contenteditable>
+    <input type="text" name="lt name" placeholder="&nbsp;last name *" required value="" contenteditable><br>
+    <input type="email" name="email" placeholder="&nbsp;e-mail *" required value="" contenteditable>
+    <input type="text" name="f-game" placeholder="&nbsp;favourite game" value="" contenteditable><br>
+    <textarea name="enquiry" rows="3" placeholder="&nbsp; enquiry about *" required value="" contenteditable></textarea>
     <label><sup>* </sup>Required</label>
     <br>
     <button type="submit" value="submit" onclick="alert('Connect successfull. We'll soon connect with yoou with your queries.')">Submit</button>
