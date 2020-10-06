@@ -1,108 +1,107 @@
-	<!DOCTYPE html>
-	<html>
-	<head>
-		<title>Registration form</title>
-		<style>
-			body{
-				background: linear-gradient(65deg,forestgreen,pink,salmon,deepskyblue);
-				background-size: cover;
-				background-attachment: fixed;
-			}
-			form{
-				border:1px solid black;
-				position: absolute;
-				margin: 0px 0px 10px 470px;
-				border-radius: 8%;
-				width: 32%;
-				resize: both;
-				opacity: 0.3;
-			}
-			form:hover{
-				opacity: 0.9;
-			}
-			select,input{
-				margin:5px;
-				padding: 5px;
-				font-size: 15px;
-				font-family: courier;
-				border-radius: 9px;
-				border:2px solid lightslategray;
-				background: linear-gradient(-11deg,cornflowerblue,lightcoral,limegreen);
-				overflow: auto;
-			}
-			label{
-				margin:9px;
-				font-size: 17px;
-				font-family:cursive; 
-			}
-			button{
-				padding: 8px;
-				margin: 11px 0px 0px 21%;
-				font-size: 14px;
-				font-family: courier;
-				border-radius: 10px;
-				border:2px solid lightslategray;
-				background: linear-gradient(-11deg,cornflowerblue,lightcoral,limegreen);
-			}
-			.p{
-				border-bottom: 2px solid lightslategray;
-			}
-			#Signup{
-				border-radius: 50%;
-				margin-left: 19px;
-			}
-			/*social connect*/
-			ul{
-				list-style-type: none;
-				word-spacing: 50px;
-			}
-			li{
-				display: inline-block;
-			}
-			a{
-				text-decoration: none;
-			}
-			.existingusr{
-				color:fuchsia;
-				text-decoration:2px underline red;
-			}
-			</style>
-	</head>
-	<body>
-		<form autocomplete="on">
-			<p class="p">
-			<img src="signup.png" height="100px" width="118px" id="Signup"> <big style="font-size:65px; margin-left: 0px; color:rgb(13,13,13); font-family: courier;">Sign Up</big></p>
-			<label>Username</label>
-			<input type="Username" required><br>
-			<label>Name</label>
-			<select required>
-				<option>-select-</option>
-				<option>Mr.</option>
-				<option>Mrs.</option>
-				<option>Other</option>
-			</select>
-			<input type="text" required><br>
-			<label>email</label>
-			<input type="email" required><br>
-			<label>Password</label>
-			<input type="Password" required minlength="8"><br>
-			<label>Confirm Password</label>
-			<input type="password" required minlength="8"><br>
-			<label>Upload photo</label>
-			<input type="file" accept="image/*" multiple required><br>
-			<p style="font-family: cursive; font-size:16px;">
-			<input type="radio" required>I agree with the terms and conditions policy.</p>
-			<hr><pre>	        	<b style="font-family: cursive; font-size: 17px;">or connect with<b></pre>
-			<ul>
-				<li><a href="https://accounts.google.com"><img src="gmail.svg" height="46px" width="47px" class="gmail" target="_blank"></a></li>
-				<li><a href="https://www.facebook.com/"><img src="facebook.svg" height="46px" width="47px" class="facebook"></a></li>
-				<li><a href="https://github.com"><img src="github.svg" height="46px" width="47px" class="github"></a></li>
-				<li><a href="https://secure.indeed.com/account/login"><img src="indeed.png" height="46px" width="47px" class="indeed"></a></li>
-			</ul>
-			<button type="Registration">Sign up</button>
-			<button type="reset" onclick="alert('Warning: Your entered data will be reset.')">Reset </button>
-			<br>
-			<p style="margin-left: 20px;">Are you an <a href="login.html" class="existingusr">existing user</a>.</p>
-
-	</body>
-	</html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration form</title>
+	<style>
+		body{
+			background: linear-gradient(65deg,forestgreen,pink,salmon,deepskyblue);
+			background-size: cover;
+			background-attachment: fixed;
+		}
+		form{
+			border:1px solid black;
+			position: absolute;
+			margin: 0px 0px 10px 470px;
+			border-radius: 8%;
+			width: 32%;
+			resize: both;
+			opacity: 0.3;
+		}
+		form:hover{
+			opacity: 0.9;
+		}
+		select,input{
+			margin:5px;
+			padding: 5px;
+			font-size: 15px;
+			font-family: courier;
+			border-radius: 9px;
+			border:2px solid lightslategray;
+			background: linear-gradient(-11deg,cornflowerblue,lightcoral,limegreen);
+			overflow: auto;
+		}
+		label{
+			margin:9px;
+			font-size: 17px;
+			font-family:cursive; 
+		}
+		button{
+			padding: 8px;
+			margin: 11px 0px 0px 21%;
+			font-size: 14px;
+			font-family: courier;
+			border-radius: 10px;
+			border:2px solid lightslategray;
+			background: linear-gradient(-11deg,cornflowerblue,lightcoral,limegreen);
+		}
+		.p{
+			border-bottom: 2px solid lightslategray;
+		}
+		#Signup{
+			border-radius: 50%;
+			margin-left: 19px;
+		}
+		/*social connect*/
+		ul{
+			list-style-type: none;
+			word-spacing: 50px;
+		}
+		li{
+			display: inline-block;
+		}
+		a{
+			text-decoration: none;
+		}
+		.existingusr{
+			color:fuchsia;
+			text-decoration:2px underline red;
+		}
+		</style>
+</head>
+<body>
+	<form autocomplete="on">
+		<p class="p">
+		<img src="signup.png" height="100px" width="118px" id="Signup"> <big style="font-size:65px; margin-left: 0px; color:rgb(13,13,13); font-family: courier;">Sign Up</big></p>
+		<label>Username</label>
+		<input type="Username" required><br>
+		<label>Name</label>
+		<select required>
+			<option>-select-</option>
+			<option>Mr.</option>
+			<option>Mrs.</option>
+			<option>Other</option>
+		</select>
+		<input type="text" required><br>
+		<label>email</label>
+		<input type="email" required><br>
+		<label>Password</label>
+		<input type="Password" required minlength="8"><br>
+		<label>Confirm Password</label>
+		<input type="password" required minlength="8"><br>
+		<label>Upload photo</label>
+		<input type="file" accept="image/*" multiple required><br>
+		<p style="font-family: cursive; font-size:16px;">
+		<input type="radio" required>I agree with the terms and conditions policy.</p>
+		<hr><pre>	        	<b style="font-family: cursive; font-size: 17px;">or connect with<b></pre>
+		<ul>
+			<li><a href="https://accounts.google.com"><img src="gmail.svg" height="46px" width="47px" class="gmail" target="_blank"></a></li>
+			<li><a href="https://www.facebook.com/"><img src="facebook.svg" height="46px" width="47px" class="facebook"></a></li>
+			<li><a href="https://github.com"><img src="github.svg" height="46px" width="47px" class="github"></a></li>
+			<li><a href="https://secure.indeed.com/account/login"><img src="indeed.png" height="46px" width="47px" class="indeed"></a></li>
+		</ul>
+		<button type="Registration">Sign up</button>
+		<button type="reset" onclick="alert('Warning: Your entered data will be reset.')">Reset </button>
+		<br>
+		<p style="margin-left: 20px;">Are you an <a href="login.html" class="existingusr">existing user</a>.</p>
+</body>
+</html>
