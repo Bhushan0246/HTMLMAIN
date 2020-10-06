@@ -76,7 +76,7 @@
 		<input type="Username" required><br>
 		<label>Name</label>
 		<select required>
-			<option>-select-</option>
+			<option value="">-select-</option>
 			<option>Mr.</option>
 			<option>Mrs.</option>
 			<option>Other</option>
@@ -102,6 +102,7 @@
 		<button type="Registration">Sign up</button>
 		<button type="reset" onclick="alert('Warning: Your entered data will be reset.')">Reset </button>
 		<br>
-		<p style="margin-left: 20px;">Are you an <a href="login.html" class="existingusr">existing user</a>.</p>
+		<p style="margin-left: 20px;">Are you an <a href="login form.html" class="existingusr">existing user</a>.
+		</p>
 </body>
 </html>
