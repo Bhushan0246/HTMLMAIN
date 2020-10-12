@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rotating ball loader</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style type="text/css">
+		body{
+			background-color: gray;
+		}
+		#wrap{
+			position: absolute;
+			left: 47%;
+			top: 40%;
+			transform-origin: center;
+			transform-box: fill-box;
+			animation: rotate 5s ease-in-out infinite;
+		}
+		@keyframes rotate{
+			30%{transform: rotateZ(115deg);}
+			33%{transform: rotateZ(115deg);}			
+			63%{transform: rotateZ(235deg);}
+			66%{transform: rotateZ(235deg);}
+			97%{transform: rotateZ(360deg);}
+			100%{transform: rotateZ(360deg);}
+		}
+	</style>
+</head>
+<body>
+
+<div id="wrap">
+
+<svg width="75" height="64" viewBox="0 0 75 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 1">
+<circle id="Ellipse 1" cx="37.5" cy="12.5" r="12" fill="#FE5190" stroke="#F91F6D"/>
+<circle id="Ellipse 2" cx="12.5" cy="51.5" r="12" fill="#5EA7FD" stroke="#217CE7"/>
+<circle id="Ellipse 3" cx="62.5" cy="51.5" r="12" fill="#80C269" stroke="#60954D"/>
+</g>
+</svg>
+
+</div>
+</body>
+</html>
