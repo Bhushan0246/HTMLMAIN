@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		body{
+			background: rgb(10, 7, 20);
+		}
+		.ball{
+			width: 1.5vmin;
+			height: 1.4vmin;
+			border-radius: 50%;
+			position: absolute;
+			left: 30%;
+			top: 45%;
+			opacity: 0;
+			animation: move 1.5s linear infinite alternate;
+		}
+		@keyframes move{
+			0%{
+				left: 30%;
+			}
+			12%{
+				left: 30%;
+				opacity: 0;
+			}
+			50%{
+				opacity: 0.2;
+			}
+			90%{
+				left: 60%;
+			}
+			100%{
+				left: 60%;
+				width: 1.9vmin;
+				height: 1.8vmin;
+				opacity: 1;
+			}
+		}
+		.one{
+			background-color: darkorange;
+		}
+		.two{
+			background-color: lightgreen;
+			animation-delay: .3s;
+		}
+		.three{
+			background-color: gold;
+			animation-delay: .6s;
+		}
+		.four{
+			background-color: deeppink;
+			animation-delay: .9s;
+		}
+		.five{
+			background-color: #666666;
+			animation-delay: 1.2s;
+		}
+		.six{
+			background-color: dodgerblue;
+			animation-delay: 1.5s;
+		}
+	</style>
+</head>
+<body>
+<div class="loader-wrap">
+	<p class="ball one"></p>
+	<p class="ball two"></p>
+	<p class="ball three"></p>
+	<p class="ball four"></p>
+	<p class="ball five"></p>
+	<p class="ball six"></p>
+</div>
+</body>
+</html>
