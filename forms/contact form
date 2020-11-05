@@ -77,7 +77,7 @@
 	<big><h1>Contact us</h1></big>
 	<br><br>
 	<pre><b>To request information or to drop us quick notes, fill out the Form given below and submit.<br>                                       you can also contact our Corporate Office for information on further enquiries.		                            * Required</b></pre>
-	<form action="thankyou.html" method="get" autocomplete>
+	<form action="../Websites/thankyou.html" method="get" autocomplete>
 
 	<label>Title<sup>* </sup> </label>
 	<!--<select> is for a selection from the options given in <option>--><select>
