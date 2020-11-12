@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <title>frames</title>
 </head>
 <frameset rows="45%,55%">
-<frame src="first_page.html">
-<frame src="form.html">
+<frame src="./Websites/thankyou.html">
+<frame src="./Websites/css.html">
 </frameset>
 </html>
