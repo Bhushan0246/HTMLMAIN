@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <style type="text/css">
+    html{
+      user-select: none;
+      scroll-behavior: smooth;
+    }
+  	svg:not(:root).svg-inline--fa{
+  		overflow:visible
+  	}
+  	.svg-inline--fa{
+  		display:inline-block;
+  		font-size:inherit;
+  		height:1em;
+  		overflow:visible;
+  		vertical-align:-.125em
+  	}
+  	.svg-inline--fa.fa-lg{
+  		vertical-align:-.225em
+  	}
+  	.svg-inline--fa.fa-w-1{
+  		width:.0625em
+  	}
+  	.svg-inline--fa.fa-w-2{
+  		width:.125em
+  	}
+  	.svg-inline--fa.fa-w-3{
+  		width:.1875em
+  	}
+  	.svg-inline--fa.fa-w-4{
+  			width:.25em
+  	}
+  	.svg-inline--fa.fa-w-5{
+  		width:.3125em
+  	}
+  	.svg-inline--fa.fa-w-6{
+  		width:.375em
+  	}
+  	.svg-inline--fa.fa-w-7{
+  		width:.4375em
+  	}
+  	.svg-inline--fa.fa-w-8{
+  		width:.5em
+  	}
+  	.svg-inline--fa.fa-w-9{
+  		width:.5625em
+  	}
+  	.svg-inline--fa.fa-w-10{
+  		width:.625em
+  	}
+  	.svg-inline--fa.fa-w-11{
+  		width:.6875em
+  	}
+  	.svg-inline--fa.fa-w-12{width:.75em}.svg-inline--fa.fa-w-13{width:.8125em}.svg-inline--fa.fa-w-14{width:.875em}.svg-inline--fa.fa-w-15{width:.9375em}.svg-inline--fa.fa-w-16{width:1em}.svg-inline--fa.fa-w-17{width:1.0625em}.svg-inline--fa.fa-w-18{width:1.125em}.svg-inline--fa.fa-w-19{width:1.1875em}.svg-inline--fa.fa-w-20{width:1.25em}.svg-inline--fa.fa-pull-left{margin-right:.3em;width:auto}.svg-inline--fa.fa-pull-right{margin-left:.3em;width:auto}.svg-inline--fa.fa-border{height:1.5em}.svg-inline--fa.fa-li{width:2em}.svg-inline--fa.fa-fw{width:1.25em}.fa-layers svg.svg-inline--fa{bottom:0;left:0;margin:auto;position:absolute;right:0;top:0}.fa-layers{display:inline-block;height:1em;position:relative;text-align:center;vertical-align:-.125em;width:1em}.fa-layers svg.svg-inline--fa{-webkit-transform-origin:center center;transform-origin:center center}.fa-layers-counter,.fa-layers-text{display:inline-block;position:absolute;text-align:center}.fa-layers-text{left:50%;top:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);-webkit-transform-origin:center center;transform-origin:center center}.fa-layers-counter{background-color:#ff253a;border-radius:1em;-webkit-box-sizing:border-box;box-sizing:border-box;color:#fff;height:1.5em;line-height:1;max-width:5em;min-width:1.5em;overflow:hidden;padding:.25em;right:0;text-overflow:ellipsis;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top right;transform-origin:top right}.fa-layers-bottom-right{bottom:0;right:0;top:auto;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:bottom right;transform-origin:bottom right}.fa-layers-bottom-left{bottom:0;left:0;right:auto;top:auto;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:bottom left;transform-origin:bottom left}.fa-layers-top-right{right:0;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top right;transform-origin:top right}.fa-layers-top-left{left:0;right:auto;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top left;transform-origin:top left}.fa-lg{font-size:1.3333333333em;line-height:.75em;vertical-align:-.0667em}.fa-xs{font-size:.75em}.fa-sm{font-size:.875em}.fa-1x{font-size:1em}.fa-2x{font-size:2em}.fa-3x{font-size:3em}.fa-4x{font-size:4em}.fa-5x{font-size:5em}.fa-6x{font-size:6em}.fa-7x{font-size:7em}.fa-8x{font-size:8em}.fa-9x{font-size:9em}.fa-10x{font-size:10em}.fa-fw{text-align:center;width:1.25em}.fa-ul{list-style-type:none;margin-left:2.5em;padding-left:0}.fa-ul>li{position:relative}.fa-li{left:-2em;position:absolute;text-align:center;width:2em;line-height:inherit}.fa-border{border:solid .08em #eee;border-radius:.1em;padding:.2em .25em .15em}.fa-pull-left{float:left}.fa-pull-right{float:right}.fa.fa-pull-left,.fab.fa-pull-left,.fal.fa-pull-left,.far.fa-pull-left,.fas.fa-pull-left{margin-right:.3em}.fa.fa-pull-right,.fab.fa-pull-right,.fal.fa-pull-right,.far.fa-pull-right,.fas.fa-pull-right{margin-left:.3em}.fa-spin{-webkit-animation:fa-spin 2s infinite linear;animation:fa-spin 2s infinite linear}.fa-pulse{-webkit-animation:fa-spin 1s infinite steps(8);animation:fa-spin 1s infinite steps(8)}@-webkit-keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}.fa-rotate-90{-webkit-transform:rotate(90deg);transform:rotate(90deg)}.fa-rotate-180{-webkit-transform:rotate(180deg);transform:rotate(180deg)}.fa-rotate-270{-webkit-transform:rotate(270deg);transform:rotate(270deg)}.fa-flip-horizontal{-webkit-transform:scale(-1,1);transform:scale(-1,1)}.fa-flip-vertical{-webkit-transform:scale(1,-1);transform:scale(1,-1)}.fa-flip-both,.fa-flip-horizontal.fa-flip-vertical{-webkit-transform:scale(-1,-1);transform:scale(-1,-1)}:root .fa-flip-both,:root .fa-flip-horizontal,:root .fa-flip-vertical,:root .fa-rotate-180,:root .fa-rotate-270,:root .fa-rotate-90{-webkit-filter:none;filter:none}.fa-stack{display:inline-block;height:2em;position:relative;width:2.5em}.fa-stack-1x,.fa-stack-2x{bottom:0;left:0;margin:auto;position:absolute;right:0;top:0}.svg-inline--fa.fa-stack-1x{height:1em;width:1.25em}.svg-inline--fa.fa-stack-2x{height:2em;width:2.5em}.fa-inverse{color:#fff}.sr-only{border:0;clip:rect(0,0,0,0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.sr-only-focusable:active,.sr-only-focusable:focus{clip:auto;height:auto;margin:0;overflow:visible;position:static;width:auto}.svg-inline--fa .fa-primary{fill:var(--fa-primary-color,currentColor);opacity:1;opacity:var(--fa-primary-opacity,1)}.svg-inline--fa .fa-secondary{fill:var(--fa-secondary-color,currentColor);opacity:.4;opacity:var(--fa-secondary-opacity,.4)}.svg-inline--fa.fa-swap-opacity .fa-primary{opacity:.4;opacity:var(--fa-secondary-opacity,.4)}.svg-inline--fa.fa-swap-opacity .fa-secondary{opacity:1;opacity:var(--fa-primary-opacity,1)}.svg-inline--fa mask .fa-primary,.svg-inline--fa mask .fa-secondary{fill:#000}.fad.fa-inverse{color:#fff}
+  </style>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/froala/design-blocks@master/dist/css/froala_blocks.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/froala-editor/css/froala_editor.pkgd.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/froala-editor/css/froala_style.min.css">
+  <style data-fp="">
+body, html {
+  margin: 0;
+  height: 100%;
+}
+
+body.no-block {
+  flex-flow: column;
+  overflow-x: hidden;
+  display: flex;
+}
+
+body {
+  background: transparent;
+}
+
+.fp-no-block {
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  flex-direction: column;
+  cursor: pointer;
+  color: #444;
+  display: none;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  text-align: center;
+  background: #FFF;
+  transition: margin 0.25s linear 0.25s;
+}
+.fa-bars{
+  color: ghostwhite;
+}
+.fp-no-block:hover {
+  background: #EFEFEF;
+}
+
+.fp-no-block.fp-visible {
+  display: flex;
+}
+
+.fp-no-sections {
+  flex: 2;
+}
+
+.fp-no-block p {
+  margin: 0;
+}
+
+.fp-no-sections p + p {
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.fdb-block {
+  box-shadow: 0;
+  margin-bottom: 0;
+  transition: margin 0.25s linear 0.25s;
+}
+
+.fp-active {
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.14), 0 0px 6px rgba(0,0,0,0.16);
+  -moz-box-shadow: 0px 0px 20px rgba(0,0,0,0.14), 0 0px 6px rgba(0,0,0,0.16);
+  -webkit-box-shadow: 0px 0px 20px rgba(0,0,0,0.14), 0 0px 6px rgba(0,0,0,0.16);
+  z-index: 9999;
+}
+
+body.fp-add-view [data-block-type],
+body.fp-add-view .fp-no-block {
+  margin-bottom: 20px;
+}
+
+body.fp-add-view [data-block-type] {
+  user-select: none;
+  position: relative;
+}
+
+body.fp-add-view section[data-block-type] {
+  cursor: move;
+}
+
+body.fp-add-view [data-block-type]:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: block;
+  z-index: 10000;
+  content: "";
+}
+
+.fp-drop-placeholder {
+  height: 200px;
+  width: 100%;
+  border: solid 10px  #0098f7;
+  background: #FFF;
+  margin-bottom: 20px;
+}
+
+.fp-dragging {
+  display: none;
+}
+
+.fr-popup {
+  z-index: 10000 !important;
+}
+
+img.fr-dib {
+  margin: 5px auto;
+  display: block;
+  float: none;
+  vertical-align: top;
+}
+
+span.fr-emoticon.fr-emoticon-img {
+  background-repeat: no-repeat !important;
+  font-size: inherit;
+  height: 1em;
+  width: 1em;
+  min-height: 20px;
+  min-width: 20px;
+  display: inline-block;
+  margin: -.1em .1em .1em;
+  line-height: 1;
+  vertical-align: middle;
+}
+section{
+  box-shadow: 1px 1px 9px 0 tomato;
+}
+
+.back-top{
+    border: 1vmin solid royalblue;
+    padding: 0 1vmin;
+    border-radius: 12px;
+    font-size: 2.8vw;
+    position: fixed;
+    right: 1%;
+    bottom: 3%;
+    z-index: 10005;
+    color: #333333;
+    box-shadow: 3px 4px 5px 0 dimgray;
+}
+.back-top:hover{
+    color: ghostwhite;
+    background-color: dodgerblue;
+}
+</style>
+</head>
+<body>
+          <header class="bg-dark" data-block-type="headers" data-id="1" id="navbar">
+  <div class="container">
+    <nav class="navbar navbar-expand-md">
+      <div class="col">
+        <p>
+        <a class="navbar-brand" href="#navbar">
+          <img src="" height="35" alt="Logo">
+        </a>
+      </p>
+    </div>
+      
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav11" aria-controls="navbarNav11" aria-expanded="false" aria-label="Toggle navigation" contenteditable>
+        <span class="navbar-toggler-icon"> <i class="fa fa-bars" aria-hidden="true"></i> </span>
+      </button>
+
+      <div class="navbar-collapse collapse" id="navbarNav11" style="">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" contenteditable="false" href="#home">Home&nbsp;
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+            <li class="nav-item">
+              <a class="nav-link" contenteditable="false" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" contenteditable="false" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" contenteditable="false" href="#team">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" contenteditable="false" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" contenteditable="false" href="#contacts">Contact</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+  </div>
+</header>
+<section class="fdb-block" data-block-type="contents" data-id="7" id="home">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-10 col-sm-6 m-auto col-md-4 pb-4 pb-md-0"><p>
+        <img alt="image" class="img-fluid rounded-0 fr-fic fr-dii" src="C:\Users\Balkrishna\Downloads\undraw_smart_home_28oy.svg" style="width: 400px;"></p></div>
+      <div class="col-12 ml-auto col-md-6 col-lg-5"><h1>Text</h1>
+        <p class="lead">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+        <p>
+        <a class="btn btn-primary mt-4 mb-5 mb-md-0" href="#">Button</a>
+      </p>
+    </div>
+    </div>
+  </div>
+</section>
+<br>
+<section class="fdb-block" data-block-type="features" data-id="2" id="features">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-12 col-md-8 col-lg-6 m-md-auto ml-lg-0 mr-lg-auto">
+        <p>
+        <img alt="image" class="img-fluid" src="https://cdn.jsdelivr.net/gh/froala/design-blocks@master/dist/imgs//draws/features.svg"></p>
+      </div>
+      <div class="col-12 col-lg-6 col-xl-5 ml-sm-auto pt-5 pt-lg-0">
+        <h1>Features</h1>
+        <div class="row pt-4 pt-xl-5">
+          <div class="col-12 col-sm-6 col-xl-5">
+        <h4 style="text-align: center;">
+          <strong>Feature One</strong></h4>
+          <p>Far far away, behind the word mountains</p>
+      </div>
+      <div class="col-12 col-sm-6 col-xl-5 m-auto pt-3 pt-sm-0">
+        <h4 style="text-align: center;">
+        <strong>Feature Two</strong></h4>
+        <p>Separated they live in Bookmarksgrove</p>
+      </div>
+    </div>
+      <div class="row pt-3">
+        <div class="col-12 col-sm-6 col-xl-5">
+          <h4 style="text-align: center;">
+            <strong>Feature Three</strong>
+          </h4>
+            <p>A small river named Duden flows by me</p>
+          </div>
+            <div class="col-12 col-sm-6 col-xl-5 m-auto pt-3 pt-sm-0">
+              <h4 style="text-align: center;">
+                <strong>Feature Four</strong>
+              </h4>
+              <p>Separated they live in Bookmarksgrove</p>
+            </div>
+            </div>
+          </div>
+    </div>
+  </div>
+</section>
+<br>
+
+<section class="fdb-block" data-block-type="pricings" data-id="3" id="pricing">
+    <div class="row text-center">
+      <div class="col">
+        <h1>Pricing</h1>
+      </div>
+    </div>
+
+    <div class="row mt-5 align-items-center">
+      <div class="col-12 col-sm-10 col-md-8 m-auto col-lg-4 text-left">
+        <div class="fdb-box fdb-touch p-5 rounded">
+          <h2>Hobby&nbsp;
+        <strong class="float-xl-right d-lg-block d-xl-inline">$149</strong>
+      </h2>
+      <br>
+      <p class="lead">
+        <em>Copy Writers ambushed her, made her drunk.</em>
+      </p>
+      <ul class="text-left pl-3 mt-5 mb-5">
+        <li>Support - 10 hours</li>
+        <li>Storage - 16 GB</li>
+        <li>Item 3</li>
+      </ul>
+      <p class="text-left pt-4">
+        <a class="btn btn-outline-primary" href="#">Buy Now</a>
+      </p>
+    </div>
+  </div>
+
+      <div class="col-12 col-sm-10 col-md-8 m-auto col-lg-4 text-left pt-4 pt-lg-0">
+        <div class="fdb-box fdb-touch p-5 rounded">
+          <h2>Advanced&nbsp;
+            <strong class="float-xl-right d-lg-block d-xl-inline">$449</strong>
+          </h2>
+          <br>
+          <p class="lead">
+            <em>Separated they live in Bookmarks right.</em>
+          </p>
+          <ul class="text-left pl-3 mt-5 mb-5">
+            <li>Support - 18 hours</li>
+            <li>Storage - 64 GB</li>
+            <li>Item 3</li>
+          </ul>
+          <p class="text-left pt-4">
+            <a class="btn btn-outline-primary" href="#">Buy Now</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-10 col-md-8 m-auto col-lg-4 text-left pt-4 pt-lg-0">
+        <div class="fdb-box fdb-touch p-5 rounded">
+          <h2>Business&nbsp;
+          <strong class="float-xl-right d-lg-block d-xl-inline">$999</strong>
+        </h2>
+        <br>
+        <p class="lead">
+          <em>A small river named Duden their place.</em>
+        </p><ul class="text-left pl-3 mt-5 mb-5">
+          <li>Support - 22 hours</li>
+          <li>Storage - 128 GB</li>
+          <li>Item 3</li>
+        </ul>
+        <p class="text-left pt-4">
+          <a class="btn btn-outline-primary" href="#">Buy Now</a>
+        </p>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+<br> 
+
+<section class="fdb-block team-5" data-block-type="teams" data-id="4" id="team">
+  <div class="container">
+    <div class="row text-center justify-content-center">
+      <div class="col-8">
+        <h1>Meet Our Team</h1>
+      </div>
+    </div>
+
+    <div class="row-70"></div>
+
+    <div class="row text-center justify-content-center">
+      <div class="col-sm-2 m-sm-auto">
+        <p>
+          <img alt="image" class="img-fluid rounded-circle" src="https://i.pinimg.com/originals/34/f2/50/34f250635ed02218356595ea6d730518.jpg">
+        </p>
+        <h3>
+          <strong>Sara Doe</strong>
+        </h3>
+        <p>"Wild Question Marks, but the Little Blind"</p>
+      </div>
+
+      <div class="col-sm-2 m-sm-auto"><p><img alt="image" class="img-fluid rounded-circle" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ-eDX1Njj9zxpzjxM2Xf9sfz5-AQ3JmuFH1A&usqp=CAU"></p><h3><strong>Sara Doe</strong></h3><p>"Wild Question Marks, but the Little Blind"</p></div>
+
+      <div class="col-sm-2 m-sm-auto"><p><img alt="image" class="img-fluid rounded-circle" src="https://cdn.pixabay.com/photo/2018/05/19/22/03/man-3414477_960_720.png"></p><h3><strong>Sara Doe</strong></h3><p>"Wild Question Marks, but the Little Blind"</p></div>
+
+      <div class="col-sm-2 m-sm-auto"><p><img alt="image" class="img-fluid rounded-circle" src="https://pickaface.net/assets/images/slides/slide4.png"></p><h3><strong>Sara Doe</strong></h3><p>"Wild Question Marks, but the Little Blind"</p></div>
+    </div>
+
+    <div class="row justify-content-center text-center mt-5">
+      <div class="col-sm-2 m-sm-auto"><p><img alt="image" class="img-fluid rounded-circle" src="https://www.vippng.com/png/detail/96-960867_computer-icons-user-profile-avatar-person.png"></p><h3><strong>Sara Doe</strong></h3><p>"Wild Question Marks, but the Little Blind"</p></div>
+
+      <div class="col-sm-2 m-sm-auto"><p><img alt="image" class="img-fluid rounded-circle" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT_JgVs1VjvxQZ4BSqFlIvLal12BWin8SUv5A&usqp=CAU"></p><h3><strong>Sara Doe</strong></h3><p>"Wild Question Marks, but the Little Blind"</p></div>
+
+      <div class="col-sm-2 m-sm-auto"><p><img alt="image" class="img-fluid rounded-circle" src="https://www.kindpng.com/picc/m/78-785827_user-profile-avatar-login-account-male-user-icon.png"></p><h3><strong>Sara Doe</strong></h3><p>"Wild Question Marks, but the Little Blind"</p></div>
+
+      <div class="col-sm-2 m-sm-auto"><p><img alt="image" class="img-fluid rounded-circle" src="https://www.freepngimg.com/thumb/youtube/63841-profile-twitch-youtube-avatar-discord-free-download-image-thumb.png"></p><h3><strong>Sara Doe</strong></h3><p>"Wild Question Marks, but the Little Blind"</p></div>
+    </div>
+  </div>
+</section>
+
+<br>
+
+<section class="fdb-block" data-block-type="contents" data-id="6" id="about">
+  <div class="container">
+    <div class="row text-left align-items-center">
+      <div class="col-10 col-sm-6 m-auto m-lg-0 col-lg-4">
+        <p>
+          <img alt="About us" class="img-fluid fr-fic fr-dii" src="C:\Users\Balkrishna\Downloads\undraw_team_spirit_hrr4 (1).svg" style="width: 350px;">
+        </p>
+      </div>
+
+      <div class="col-12 col-lg-7 offset-lg-1 pt-4 pt-lg-0">
+        <h1 style="text-align: center;">About Us</h1>
+        <br>
+        <p class="lead">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics.</p>
+        <div class="row mt-5">
+          <div class="col-12 col-sm-6">
+            <h3><strong>Open Source</strong></h3>
+            <p class="lead">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+          </div>
+          <div class="col-12 col-sm-6 pt-3 pt-sm-0">
+            <h3><strong>Bootstrap</strong></h3>
+            <p class="lead">Right at the coast of the Semantics, a large language ocean. A small river named Duden.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<br>
+
+<section class="fdb-block" data-block-type="forms" data-id="8">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6 m-md-auto ml-lg-0 col-lg-5"><p><img alt="image" class="img-fluid" src="https://cdn.jsdelivr.net/gh/froala/design-blocks@master/dist/imgs//draws/group-chat.svg"></p></div>
+      <div class="col-12 col-md-10 col-lg-6 mt-4 mt-lg-0 ml-auto mr-auto ml-lg-auto text-left">
+        <div class="row">
+        <div class="col">
+          <h1>Subscribe</h1>
+          <p class="lead">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+        </div>
+      </div>
+        <div class="row mt-4">
+          <div class="col">
+            <div class="input-group">
+              <input type="email" class="form-control" placeholder="Enter your email address" required>
+              <div class="input-group-append">
+        <button class="btn btn-primary" type="submit"> Submit </button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <h2 class="h4">* &nbsp;Leave your email address to be notified first.</h2>
+  </div>
+</div>
+</div>
+    </div>
+  </div>
+</section>
+<br>
+<section class="fdb-block pt-0" data-block-type="contacts" data-id="9" id="contacts">
+  <div class="bg-gray" style="background-image: url('file:///C:/Users/Balkrishna/Downloads/clouds.svg');background-size: cover;background-origin: border-box;">
+    <div class="container">
+<br>
+      <div class="row text-left">
+        <div class="col-8">
+            <h1 class="text-right">Contact Us</h1>
+          <p class="lead">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container bg-r" style="background-image: url(C:\Users\Balkrishna\Downloads\undraw_personal_information_962o.svg);">
+<br>    <div class="row">
+      <div class="col-12 col-md-6 col-lg-5"><h2><span style="color: rgb(71, 85, 119);">Call or email</span></h2><p class="text-large">Support, Sales, and Account Management services are currently available in English and Hindi.</p><p class="h3 mt-4 mt-lg-5"><strong>Support &amp; Sales</strong></p><p>+917292408533</p><p><a class="btn btn-outline-primary" href="#">Contact Support</a></p><p>Our technical support is available by phone or email from 9am to 11pm IST, Monday through Saturday.</p><p class="h3 mt-4 mt-lg-5"><strong>General inquiries -</strong></p><p><a class="nav-link" href="#">hello@website.com</a></p></div>
+
+      <div class="col-12 col-md-6 ml-auto">
+        <h2>
+          <span style="color: rgb(71, 85, 120);">Drop us a line</span>
+        </h2>
+        <p>
+          <br>
+        </p>
+        <form>
+          <div class="row">
+            <div class="col">
+              <span style="color: rgb(71, 85, 119);">
+                <input type="text" class="form-control" placeholder="First name" required>
+              </span>
+            </div>
+            <div class="col">
+              <span style="color: rgb(71, 85, 119);">
+                <input type="text" class="form-control" placeholder="Last name" required>
+              </span>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col">
+              <span style="color: rgb(71, 85, 119);">
+                <input type="email" class="form-control" placeholder="Email" required>
+              </span>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col">
+              <span style="color: rgb(71, 85, 119);">
+                <input type="text" class="form-control" placeholder="Phone" required>
+              </span>
+            </div>
+            <div class="col">
+              <span style="color: rgb(71, 85, 119);">
+                <input type="text" class="form-control" placeholder="Country" required>
+              </span>
+            </div>
+          </div><div class="row mt-4"><div class="col">
+        <span style="color: rgb(71, 85, 119);">
+          <select class="form-control" required="">&nbsp;
+          <option value="">Select Department</option>
+         <option value="1">Support</option>
+         <option value="2">Sales</option> 
+         <option value="3">Accounting</option>&nbsp;
+       </select>
+     </span>
+   </div>
+ </div>
+ <div class="row mt-4"><div class="col">
+        <span style="color: rgb(71, 85, 119);">
+        <textarea class="form-control" name="message" rows="3" placeholder="How can we help?" style="margin-top: 0px; margin-bottom: 0px; height: 82px;" required></textarea>
+      </span>
+    </div>
+  </div>
+  <div class="row mt-4">
+    <div class="col">
+    <span style="color: rgb(71, 85, 119);">
+      <button class="btn btn-primary" type="submit" onclick="alert('Thankyou :) for being in contact with us.We will soon update you with our support. ')"> Submit </button>
+    </span>
+  </div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
+
+<footer class="fdb-block footer-large fp-active" data-block-type="footers" data-id="12" style="background-image: url(file:///C:/Users/Balkrishna/Downloads/wavesOpacity.svg);">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col">
+        <h2>Company Name</h2>
+        <h3>Company Address</h3>
+        <h3>India</h3>
+        <p style="color: #333333">Phone - +91 7292408533</p></div>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col text-center">
+        <p class="lead">
+          <a class="mx-2" href="https://twitter.com/explore">
+            <svg class="svg-inline--fa fa-twitter fa-w-16" aria-hidden="true" data-prefix="fab" data-icon="twitter" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+              <path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"> 
+              </path>
+            </svg>
+            <!-- <i class="fab fa-twitter" aria-hidden="true"></i> -->
+          </a> 
+          <a class="mx-2" href="https://www.facebook.com/">
+            <svg class="svg-inline--fa fa-facebook fa-w-16" aria-hidden="true" data-prefix="fab" data-icon="facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+              <path fill="currentColor" d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z">
+              </path>
+          </svg>
+          <!-- <i class="fab fa-facebook" aria-hidden="true"></i> -->
+        </a>
+        <a class="mx-2" href="https://www.instagram.com/">
+          <svg class="svg-inline--fa fa-instagram fa-w-14" aria-hidden="true" data-prefix="fab" data-icon="instagram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+            <path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+            </path>
+          </svg>
+            <!-- <i class="fab fa-instagram" aria-hidden="true"></i> -->
+          </a>
+          <a class="mx-2" href="https://accounts.google.com">
+            <svg class="svg-inline--fa fa-google fa-w-16" aria-hidden="true" data-prefix="fab" data-icon="google" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512" data-fa-i2svg="">
+              <path fill="currentColor" d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z">
+             </path>
+            </svg>
+          </a>
+          <!-- <i class="fab fa-google" aria-hidden="true"></i> -->
+      </p>
+    </div>
+    </div>
+  </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/froala-editor/js/froala_editor.pkgd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+
+<a href="#navbar" title="Back to top" class="back-top">
+    <i class="fa fa-arrow-up"></i>
+</a>
+</body>
+</html>
+          
