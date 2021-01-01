@@ -54,12 +54,12 @@
 			opacity: .9;
 			color:#f2f2f2;
 			border-radius: 15px;
-			transition: background 500ms linear,color 800ms linear;
+			transition: background 400ms linear,color 500ms linear;
 		}
 		button:hover{
 			opacity: .7;
 			background-color: #191919;
-			color: white;
+			color: goldenrod;
 		}
 		hr{
 			height: 0;
@@ -97,7 +97,7 @@
 		#pages:hover{
 			background:transparent; 
 			opacity: 1;
-			color: #cfcfeb;
+			color: goldenrod;
 		}
 		#show-all{
 			margin-left: 47%;
@@ -122,7 +122,7 @@
 			color: #999999;
 		}
 		#contact-details a:hover span{
-			color: #cfcfeb;
+			color: goldenrod;
 		}
 
 		.dark-mode {
@@ -204,12 +204,14 @@ input:checked + .slider:before {
 	right: 1.4%;
 	bottom: 2%;
 	opacity: 0.7;
-	transition: opacity 0.4s;
 	z-index: 2;
 	border: 2px dashed #1a1a12;
 }
 .mv-top:hover{
 	opacity: 0.9;
+}
+.mv-top:hover a{
+	color: goldenrod;
 }
 	</style>
 	<script>
