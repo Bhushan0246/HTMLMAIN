@@ -9,6 +9,7 @@
 <style type="text/css">
 		html{
 			font-family: 'Lemonada';
+			scroll-behavior: smooth;
 		}
 		body{
 			background-image: url("https://i.pinimg.com/originals/3b/ee/3a/3bee3a7754b3158b65102f825fa9ab3b.jpg");
@@ -28,12 +29,13 @@
 		ul{
 			list-style-type: none;
 			background-color: #000000;
-			background-image: linear-gradient(215deg, #102030 10%, #414541 54%);
+			background-image: linear-gradient(215deg, #333 10%, #313031 54%);
 			border:1px dashed #262626;
 			width: 99.2%;
 			margin-left: 0;
 			word-spacing: 320px;
 			padding: 4px;
+			opacity: 0.7;
 		}
 		li{
 			display: inline-block;
@@ -41,10 +43,11 @@
 		li:hover{
 			border-top: 2px solid goldenrod;
 			color: #cfcfeb;
+			opacity: 1;
 		}
 		a{
 			text-decoration: none;
-			color:black;
+			color:#fff;
 		}
 		button{
 			background-color: #262626;
@@ -130,23 +133,23 @@
 		}
 
 
-		.switch {
- 			 position: absolute;
- 			 right: 3%;
-			 top: 3%;
-			 display: inline-block;
-			 width: 60px;
-  			 height: 34px;
-		}
+.switch {
+  position: absolute;
+  right: 3%;
+  top: 3%;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
 
-		.switch input { 
- 			opacity: 0;
-  			width: 0;
-  			height: 0;
-		}
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
 
-	.slider {
-  border:1px dashed #f2f2f2;
+.slider {
+	border:1px dashed #f2f2f2;
   position: absolute;
   cursor: pointer;
   top: 0;
@@ -190,6 +193,24 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+.mv-top{
+	border-radius: 20px;
+	padding: 4px 7px;
+	background-color: #1a1a1a;
+	color: dimgrey;
+	cursor: pointer;
+	position: fixed;
+	right: 1.4%;
+	bottom: 2%;
+	opacity: 0.7;
+	transition: opacity 0.4s;
+	z-index: 2;
+	border: 2px dashed #1a1a12;
+}
+.mv-top:hover{
+	opacity: 0.9;
+}
 	</style>
 	<script>
 	function myFunction() {
@@ -205,6 +226,12 @@ input:checked + .slider:before {
   <input type="checkbox" onclick="myFunction()">
   <span class="slider round"></span>
 </label>
+
+<div class="mv-top" title="move to top">
+	<a href="#title">
+	<i class="fa fa-chevron-up"></i>
+</a>
+</div>
 
 <!--Starting Navigation Bar-->
 <div id="nav_bar">
@@ -235,6 +262,7 @@ input:checked + .slider:before {
 <br>
 </div>
 <!--Welcome section ended-->
+<br>
 
 <!--Projects-->
 <div id="projects-intro"><br>I have worked on a variety of projects, here are some of my latest websites I have made.
@@ -300,8 +328,9 @@ input:checked + .slider:before {
 <br><br>
 </div>
 <!--Projects end-->
-
+<br>
 <hr>
+<br>
 <!--joining section-->
 <div id="together">
 	<div class="how">
@@ -326,6 +355,5 @@ input:checked + .slider:before {
 <!--joining section ended-->
 
 <br>
-
 </body>
 </html>
